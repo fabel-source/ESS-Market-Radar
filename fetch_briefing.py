@@ -215,7 +215,7 @@ def fetch_briefing() -> dict:
     return data
 
 
-def save_briefing(data: dict, path: str = "data/briefing.json"):
+def save_briefing(data: dict, path: str = "docs/data/briefing.json"):
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     # Also keep a dated archive copy
