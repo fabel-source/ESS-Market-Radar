@@ -1,366 +1,362 @@
 {
   "generated_at": "2026-08-14T07:00:00Z",
-  "week_label": "Week of 08 August 2026",
+  "week_label": "Week of 11 August 2026",
   "metrics": {
     "new_projects_30d": 6,
     "supplier_moves": 7,
     "high_signal_moves": 4,
-    "regulatory_updates": 3,
+    "regulatory_updates": 4,
     "dominant_chemistry": "LFP"
   },
   "executive_bullets": [
     {
-      "title": "Corvus Energy Wins 40 MWh BC Ferries Summit Class Contract — Largest-Capacity Battery Ferry Program in North America",
+      "title": "Corvus Energy Wins 40 MWh BC Ferries Summit Class Contract — Largest Single Canadian Ferry ESS Award",
       "date": "11 Aug 2026",
       "is_new": true,
-      "body": "Corvus Energy has been awarded a contract to supply 40 MWh of installed battery capacity (10 MWh per vessel) across four new hybrid-electric Summit Class double-ended ferries for BC Ferries — placing them among the world's highest-capacity battery-powered ferries. Each vessel will receive a Corvus Dolphin NxtGen Power system, with battery interface bases and control systems pre-sized to support a future 70 MWh total capacity per vessel, enabling near-zero-emission operation once shore-charging infrastructure matures. First delivery is scheduled from China Merchants Shipbuilding (Weihai Shipyard) in 2029, with all four in service by 2031. This contract cements Corvus's dominant position in the North American ferry ESS market and demonstrates a compelling 'install-then-expand' commercial architecture that integrators should watch carefully."
+      "body": "Corvus Energy has been awarded a contract to supply 40 MWh of battery capacity across four new hybrid-electric Summit Class ferries for BC Ferries — 10 MWh per vessel using the Dolphin NxtGen Power system. Each vessel is additionally pre-wired to support up to 70 MWh total capacity per hull as shore-charging infrastructure matures, a significant future-proofing play. The vessels (Summit Arbutus, Cedar, Maple, Spruce) will carry up to 360 vehicles and 2,100 passengers each and are scheduled for delivery from China Merchants Shipbuilding starting 2029. This award consolidates Corvus's dominant position in the North American public ferry ESS market and demonstrates that high-capacity hybrid architecture with upgrade pathways is now the preferred commercial model."
     },
     {
-      "title": "Fleetzero Leviathan LFP Battery Receives ABS Product Design Assessment — First US-Made LFP Marine ESS to Achieve Classification",
-      "date": "11 Aug 2026",
-      "is_new": true,
-      "body": "ABS has issued a Product Design Assessment (PDA) to Houston-based Fleetzero for its Leviathan Battery ESS, marking the first lithium iron phosphate marine battery system manufactured in the United States to receive classification society approval. The system operates at up to 1,000 VDC, supports a depth of discharge from 2% to 98%, carries an IP67 rating, and uses a modular containerized architecture deployable across vessel types. The first commercial deployment of 10 MWh is targeted for later in 2026 as part of a hybrid-electric vessel conversion. This is a strategic inflection point for US-domestic maritime ESS supply chains, particularly relevant against the backdrop of Jones Act newbuild programs and supply chain security concerns."
-    },
-    {
-      "title": "FuelEU Maritime Implementation in Norway Delayed to 2028 — Compliance Pressure Eases Short-Term for Norwegian Operators",
-      "date": "11 Aug 2026",
-      "is_new": true,
-      "body": "Norway's Ministry of Climate and Environment has confirmed that FuelEU Maritime (Regulation EU 2023/1805) will not enter into force under the EEA Agreement in Norway before 1 January 2028 — a significant delay from the previously expected 2026 timeline. Until formal incorporation, Norwegian and Icelandic ports will continue to be treated as third-country ports, meaning only 50% of energy consumed on Norway–EU voyages counts toward FuelEU compliance. For ESS suppliers, this may delay short-term demand signals from Norwegian ferry operators and RoPax owners who might otherwise have accelerated electrification investments to achieve FuelEU compliance credits. However, the medium-term regulatory trajectory remains firmly toward zero-emission operations."
-    },
-    {
-      "title": "Kongsberg Maritime Demerges from Kongsberg Gruppen, Lists Independently on Oslo Stock Exchange",
-      "date": "Apr 2026",
-      "is_new": false,
-      "body": "Kongsberg Maritime was formally demerged from Kongsberg Gruppen and listed as an independent publicly traded company on the Oslo Stock Exchange in April 2026, with over 8,300 employees in 35 countries. This structural change is strategically significant: as a standalone entity, Kongsberg Maritime faces increased pressure to grow its own revenue lines, which may accelerate its push to win ESS-integrated propulsion package contracts — particularly for platform supply vessels, expedition vessels, and containerships where it already bundles ESS with propulsion and DP systems. Expect more aggressive pricing and packaging of integrated electrical systems."
-    },
-    {
-      "title": "AYK Energy Delivers World's Largest Marine Battery Retrofit on Wasaline's Aurora Botnia RoPax Ferry",
-      "date": "Feb 2026",
-      "is_new": false,
-      "body": "AYK Energy completed installation of a 10.4 MWh Pisces+ LFP battery system on Wasaline's Aurora Botnia, described as the world's largest marine battery retrofit to date on a RoPax vessel. The system was enabled by DNV type approval of AYK's Pisces, Pisces+, OrionAN, and OrionAN+ product range, and is manufactured at AYK's Zhuhai facility with an annual capacity of 300 MWh expandable to 1 GWh. AYK also secured a nine-vessel deal with Grimaldi Group (18.6 MWh total, OrionAN systems) and a 16 MWh contract for Germany's new Polarstern polar research vessel via Wärtsilä. AYK is rapidly scaling into the mid-to-large vessel retrofit and newbuild segment as a credible LFP challenger to European NMC incumbents."
-    },
-    {
-      "title": "Seacap and Shorly Form End-to-End Port Electrification Platform for European Ports",
+      "title": "Fleetzero Leviathan LFP System Earns ABS Product Design Assessment — First US-Made Marine LFP Battery to Achieve Class Approval",
       "date": "12 Aug 2026",
       "is_new": true,
-      "body": "Norwegian shore power financier Seacap and technology firm Shorly (a subsidiary of Havnekraft) announced a strategic partnership to deliver full lifecycle port electrification — combining Seacap's access to over €300 million in dedicated infrastructure capital with Shorly's energy management software platform and operational services. The partnership targets the complete value chain from advisory, design, and engineering through financing, construction, and ongoing operation of shore power systems, battery banks, and port energy hubs. For maritime ESS integrators, this model is significant: it decouples capex from port operators and creates a new class of infrastructure investor willing to fund battery storage alongside shore power at ports — potentially accelerating port-side ESS demand."
+      "body": "ABS issued a Product Design Assessment (PDA) to Houston-based Fleetzero for its Leviathan LFP marine battery system, marking the first US-manufactured LFP marine ESS to receive classification society approval. The system operates at up to 1,000 VDC, supports 2–98% depth of discharge, and carries an IP67 rating in a modular containerized form factor. The first commercial deployment of 10 MWh is expected on the water in H2 2026 as part of a hybrid-electric vessel conversion. This is a geopolitically significant development: as China-Europe ESS competition intensifies, a class-approved US-made LFP system directly addresses Buy America requirements and opens federally funded vessel programs to domestic battery supply."
     },
     {
-      "title": "IMO SSE 12 Initiates Technology-Neutral Interim Guidelines for Onboard Battery ESS Safety",
-      "date": "Mar 2026",
+      "title": "Washington State Ferries Begins Construction on Three New Hybrid-Electric Ferries at Eastern Shipbuilding",
+      "date": "05 Aug 2026",
+      "is_new": true,
+      "body": "Eastern Shipbuilding Group broke steel in Panama City, FL for the first of three new 160-vehicle hybrid-electric ferries for Washington State Ferries (WSF) — the first new WSF vessel in over a decade. Washington's Governor Ferguson simultaneously exercised the option for a third vessel, bringing the confirmed program to three hulls under a $1.15 billion contract. Each new ferry will carry battery banks exceeding 13 MWh, with Corvus Energy previously confirmed as ESS supplier under a subcontract via ABB Marine. This is the largest ferry electrification program in US history and represents a critical reference project for North American maritime ESS commercialization."
+    },
+    {
+      "title": "AYK Energy Seals Nine-Vessel OrionAN Battery Deal with Grimaldi Group — ~18.7 MWh Across Mediterranean and Baltic Fleet",
+      "date": "01 Jul 2026",
       "is_new": false,
-      "body": "IMO's Sub-Committee on Ship Systems and Equipment (SSE 12) agreed to begin developing interim technology-neutral, goal-based safety guidelines for ships using battery energy storage systems, with a correspondence group reporting to SDC at its next session in May 2027. This follows MSC direction to address safety gaps hindering adoption of alternative technologies. The parallel SDC workplan targets SOLAS II-1/41 amendments by 2028 to formally allow batteries as a primary source of electrical power and lighting. Integrators should flag the 2027–2028 window as a hard regulatory boundary for battery-primary vessel project planning, and factor classification pre-submission processes into program schedules accordingly."
+      "body": "AYK Energy secured a contract to supply its 2,073 kWh OrionAN marine battery systems across nine next-generation RoPax vessels for the Grimaldi Group, totaling approximately 18,657 kWh of installed capacity fleet-wide. Six vessels will operate in the Mediterranean under Grimaldi Lines and Minoan Lines brands; three will operate under Finnlines in the Baltic Sea. All nine are being built at China Merchants Jinling Shipyard (Weihai) for delivery 2028–2030. The deal cements AYK's breakout from niche retrofits into large-scale newbuild supply, leveraging its DNV-approved LFP-based OrionAN product line and demonstrating that cost-competitive LFP chemistry is now winning multi-vessel European RoPax programs."
+    },
+    {
+      "title": "IMO SSE 12 Launches Technology-Neutral Interim Guidelines for Onboard Battery ESS Safety",
+      "date": "16 Mar 2026",
+      "is_new": false,
+      "body": "The IMO's Sub-Committee on Ship Systems and Equipment (SSE 12) agreed to begin developing technology-neutral, goal-based interim guidelines for the safe use of battery energy storage systems onboard ships, following recommendations from MSC. A correspondence group has been established, reporting to SDC at its next session in May 2027. This work runs in parallel with the SDC workplan targeting SOLAS II-1/41 amendments by 2028 to allow batteries as a primary power source. The regulatory trajectory is now unambiguous: class societies and shipowners should treat battery-as-main-power as a defined near-term pathway, not a speculative one, and should engage early in the correspondence group process."
+    },
+    {
+      "title": "Kongsberg Maritime Completes Oslo Stock Exchange Listing After Demerger from Kongsberg Gruppen",
+      "date": "Apr 2026",
+      "is_new": false,
+      "body": "Kongsberg Maritime was demerged from Kongsberg Gruppen and listed as an independent, publicly traded company on the Oslo Stock Exchange under the ticker KMAR in April 2026. This structural change gives Kongsberg Maritime greater financial autonomy and visibility as a pure-play maritime technology supplier spanning ESS, dynamic positioning, propulsion, and automation. The listing may accelerate capital allocation toward ESS and hybrid system product development and enables cleaner strategic partnerships or M&A in the ESS space without the constraints of a diversified parent conglomerate."
+    },
+    {
+      "title": "Echandia Launches 'Core' LTO System — Claims 30% Lower Upfront Cost vs. Previous Generation",
+      "date": "02 Jun 2026",
+      "is_new": false,
+      "body": "Swedish marine battery specialist Echandia launched Echandia Core, a new LTO-based battery system designed for fully electric and hybrid vessel applications delivering a claimed 30% reduction in upfront cost and installation footprint versus its predecessor. This launch directly targets one of the largest barriers to LTO adoption in maritime: initial CAPEX competitiveness versus LFP. The Core platform complements Echandia's existing Ultra and Robust lines, expanding the LTO value proposition to a wider segment of vessel operators who previously defaulted to LFP on cost grounds. The move raises competitive pressure on LFP-dominant suppliers in the ferry and harbor craft segments."
     }
   ],
   "supplier_moves": [
     {
       "supplier": "Corvus Energy",
-      "update": "Awarded 40 MWh BC Ferries Summit Class contract (11 Aug 2026). Dolphin NxtGen Power system specified for four vessels, each pre-wired for future 70 MWh upgrade. Vessels built at China Merchants Weihai Shipyard, delivery 2029–2031.",
-      "strategic_meaning": "Corvus secures the largest-capacity battery ferry project in North America and establishes an upgrade-path commercial model. Strengthens Dolphin NxtGen as the flagship product and locks in a 5–10 year lifecycle service relationship with one of North America's largest ferry operators.",
+      "update": "Won 40 MWh BC Ferries Summit Class contract (11 Aug 2026). Dolphin NxtGen Power system, 10 MWh per vessel, upgrade-ready to 70 MWh/hull. Delivery from China Merchants Weihai Shipyard, 2029–2031.",
+      "strategic_meaning": "Third consecutive major public ferry ESS win for Corvus in North America (following CMAL Scotland and Washington State Ferries). Dolphin NxtGen is now Corvus's flagship large-ferry product. The 70 MWh upgrade architecture is a differentiated lifecycle-capture strategy that locks in long-term service revenue.",
       "signal": "High"
     },
     {
       "supplier": "Fleetzero",
-      "update": "Received ABS Product Design Assessment (PDA) for Leviathan LFP Battery ESS (11 Aug 2026). First US-manufactured LFP marine battery to achieve classification approval. 1,000 VDC, IP67, modular containerized design. First commercial 10 MWh deployment targeted H2 2026.",
-      "strategic_meaning": "Opens a credible US-domestic LFP marine ESS supply chain. Strategically significant for Jones Act vessel programs and US federal procurement where domestic content requirements apply. Potential competitor to established importers in the US market.",
+      "update": "ABS issued Product Design Assessment for Leviathan LFP marine ESS (12 Aug 2026). System: up to 1,000 VDC, IP67, 2–98% DoD, modular containerized. First 10 MWh commercial deployment expected H2 2026.",
+      "strategic_meaning": "First US-manufactured LFP marine battery to receive classification society approval. Directly addresses Jones Act, Buy America, and US naval electrification procurement requirements. Positions Fleetzero as a credible domestic alternative to European and Chinese ESS suppliers for federally funded vessel programs.",
       "signal": "High"
     },
     {
       "supplier": "AYK Energy",
-      "update": "Completed world's largest RoPax battery retrofit (10.4 MWh Pisces+, Aurora Botnia). Secured nine-vessel Grimaldi Group deal (18.6 MWh total OrionAN). Won Polarstern polar research vessel contract (16 MWh, via Wärtsilä). Svitzer Balder escort tug (6 MWh AriesA, ABS-certified) completed sea trials for Port of Gothenburg delivery.",
-      "strategic_meaning": "AYK is executing a high-velocity multi-segment market entry — RoPax retrofit, newbuild ferry, research vessel, and escort tug. LFP-first strategy with DNV and ABS approvals differentiates on cost and lifecycle. Zhuhai manufacturing base provides scale leverage vs European competitors.",
+      "update": "Secured nine-vessel OrionAN battery deal with Grimaldi Group (~18.7 MWh total, Jul 2026). Earlier milestones this year: Svitzer Balder electric escort tug (6 MWh AriesA, ABS-certified, Apr 2026); Polarstern research vessel (16 MWh Pisces+, via Wärtsilä, delivery 2028); MV Yampu self-unloading bulk carrier (16 MWh, 2028).",
+      "strategic_meaning": "AYK has transitioned from a retrofit specialist to a volume newbuild supplier across multiple vessel segments in a single calendar year. LFP-first strategy with DNV type-approved product range (Pisces, Pisces+, OrionAN, OrionAN+) is generating compounding commercial momentum. Manufacturing at Zhuhai (300 MWh annual capacity, expandable to 1 GWh) underpins delivery credibility.",
       "signal": "High"
     },
     {
       "supplier": "Echandia",
-      "update": "Launched Echandia Core (Jun 2026), a new LTO system delivering 30% lower upfront cost and footprint vs previous generation. Ellen ferry LTO replacement (3.2 MWh) commissioned for summer 2026 service. First Echandia Core order confirmed July 2026. Also supplying naval frigate ESS for European NATO members.",
-      "strategic_meaning": "Echandia Core directly addresses LTO's historic cost barrier, potentially unlocking a much wider addressable market. The NMC-to-LTO replacement win on the Ellen ferry is a reference case for lifecycle upgrade sales — a growing market segment. Naval frigate work adds a defense revenue stream.",
+      "update": "Launched Echandia Core LTO system (Jun 2026) — 30% lower upfront cost and footprint vs. previous generation. First Core order confirmed Jul 2026. Earlier: Ultra platform refresh (Mar 2026); Singapore harbour tug contract (Jan 2026); India Green Tug (4.4 MWh, Jan 2026); E/F Ellen NMC-to-LTO replacement (3.2 MWh, commissioned May 2026).",
+      "strategic_meaning": "Echandia's product refresh strategy is executing on all fronts: new entry-level Core for CAPEX-sensitive projects, upgraded Ultra for high-cycle ferry operations, and a growing reference list spanning Europe, Asia, and naval applications. The Ellen NMC-to-LTO replacement validates battery replacement as a commercially viable revenue stream. SEK 325M investment (2025) is funding rapid portfolio expansion.",
       "signal": "High"
     },
     {
       "supplier": "Kongsberg Maritime",
-      "update": "Demerged from Kongsberg Gruppen and independently listed on Oslo Stock Exchange (Apr 2026). Continuing to deliver integrated ESS + propulsion packages including for Matson Aloha Class containerships (with Corvus Orca ESS) and polar expedition vessels.",
-      "strategic_meaning": "Standalone listing increases commercial pressure to grow ESS-integrated package revenue. Kongsberg's strength is system integration — bundling ESS within propulsion, DP, and automation contracts — rather than competing on cell chemistry. Watch for more aggressive integrated package pricing.",
+      "update": "Completed Oslo Stock Exchange listing as independent company (ticker: KMAR) after demerger from Kongsberg Gruppen in April 2026. Continuing ESS supply for Matson Aloha Class containerships (via Corvus Orca ESS, delivery 2026–2027) and Scenic Ikon polar expedition vessel (ESS hybrid, delivery 2027).",
+      "strategic_meaning": "Independence gives Kongsberg Maritime direct capital market access and operational flexibility. As a pure-play maritime technology group, it can now move faster on ESS partnerships, acquisitions, and product development without parent-level conglomerate governance constraints.",
       "signal": "Medium"
     },
     {
       "supplier": "CATL / CAEV",
-      "update": "CAEV (CATL's marine subsidiary) progressing Ship-Shore-Cloud zero-carbon shipping solution launched at Marintec Dec 2025. Approximately 900 electric vessels delivered to date. Chinese coastal container vessel Ning Yuan Dian Kun (20 MWh containerized, 742 TEU) entered service April 2026 on Ningbo–Zhapu route.",
-      "strategic_meaning": "CATL is deploying vertical integration (battery + power management + shore charging + cloud dispatch) at unprecedented scale in China's inland and coastal segment. As CAEV moves toward international certification, it poses a long-term structural cost threat to European ESS suppliers in all vessel segments.",
-      "signal": "High"
+      "update": "CATL's marine subsidiary CAEV operates batteries in approximately 900 ships and vessels, predominantly in China. Ship-Shore-Cloud integrated electrification platform (launched Marintec Dec 2025) combines onboard batteries, shoreside charging, battery-swapping, and cloud-based energy management. Strategic partnership with Maersk (Oct 2025) includes electrifying container shipping and ports. BYD–Corvus Energy MoU (Dec 2025/May 2026) for co-developed LFP marine battery systems represents a parallel outbound strategy.",
+      "strategic_meaning": "CATL is pursuing a full-stack maritime electrification model — not just cell supply but end-to-end system integration — targeting friction points including charging infrastructure, battery durability, and cost. The Maersk partnership signals intent to penetrate global deep-sea shipping. The BYD-Corvus MoU illustrates how Chinese cell manufacturers are also pursuing market entry via established Western marine integrators.",
+      "signal": "Medium"
     },
     {
-      "supplier": "Hanwha",
-      "update": "RINA–Hanwha MoU signed (Apr 2026) covering battery-hybrid propulsion development for newbuild and retrofit vessels, with focus on RoPax ferries. Involves Hanwha Power Systems, Hanwha Aerospace, and Hanwha Engine. Hanwha Philly Shipyard also delivering Matson Aloha Class hulls.",
-      "strategic_meaning": "Hanwha is assembling a maritime electrification stack — shipbuilding (Philly Shipyard), battery systems, propulsion (Power Systems), and now a class society partnership with RINA for certification credibility. Positions Hanwha as a South Korean integrated systems player to watch for European and US market entry.",
+      "supplier": "Hanwha Aerospace",
+      "update": "Expanding commercial vessel ESS offering based on lithium-ion submarine ESS heritage. Introduced world's first immersion-cooling marine ESS, certified by DNV and Korean Register. Received AiP from DNV for 200 kW hydrogen fuel cell system. Hanwha Engine's acquisition of Norway-based SEAM expands electric propulsion and power automation portfolio.",
+      "strategic_meaning": "Hanwha is assembling a vertically integrated Korean marine electrification platform: immersion-cooled ESS (safety differentiator), hydrogen fuel cells (decarbonization pathway), and SEAM's European electric propulsion foothold. The immersion-cooling ESS — if commercially deployed at scale — could redefine thermal management benchmarks in high-power marine applications.",
       "signal": "Medium"
     }
   ],
   "market_signals": [
     {
-      "label": "Scalable ESS Architecture Becomes a Commercial Differentiator",
-      "observation": "The BC Ferries Summit Class contract specifies 10 MWh installed today with infrastructure pre-wired for 70 MWh per vessel — a 7x upgrade headroom built at contract stage.",
-      "interpretation": "Operators are increasingly specifying upgrade-path ESS architectures rather than fixed-capacity systems. This reflects growing confidence in shore power infrastructure deployment timelines and shifts the commercial relationship from a one-time sale to a long-term lifecycle partnership. Suppliers who can credibly commit to future upgrade delivery and service hold a structural advantage in tender evaluations.",
+      "label": "LFP Dominance Deepening Across All Vessel Segments",
+      "observation": "All three major ESS contract wins this week (Corvus BC Ferries, Fleetzero ABS approval, AYK Grimaldi) are LFP-based. Echandia's LTO Core launch is explicitly framed as a response to LFP's CAPEX advantage.",
+      "interpretation": "LFP has effectively become the default chemistry for new marine ESS across ferries, RoPax, tugs, and offshore vessels. NMC is retreating to legacy retrofit cycles (as seen with E/F Ellen's NMC-to-LTO swap). LTO retains a niche in ultra-high-cycle, fast-charge duty profiles but must now compete on total cost of ownership, not just performance.",
       "confidence": "High"
     },
     {
-      "label": "LFP Displacing NMC Across Vessel Segments",
-      "observation": "Fleetzero (US LFP PDA from ABS), AYK Energy (DNV-approved LFP Pisces/OrionAN range deployed across RoPax, escort tug, research vessel, container ship), and Echandia Ellen replacement (LTO replacing NMC) all reflect continued NMC displacement. Echandia's Core product targets LTO accessibility over NMC alternatives.",
-      "interpretation": "LFP has effectively won the chemistry debate in maritime for most non-extreme applications. The last holdout is high-power density applications (large fast ferries, naval) where NMC or LTO remain relevant. Suppliers still promoting NMC-first strategies face mounting cost and safety narrative headwinds.",
+      "label": "Upgrade-Ready Architecture Emerging as Commercial Standard in Ferry Programs",
+      "observation": "BC Ferries Summit Class vessels ordered with 10 MWh installed but pre-wired and structurally prepared for up to 70 MWh per hull. Washington State Ferries hybrid design also engineered for future full-electric conversion.",
+      "interpretation": "Ferry operators are signaling that shore-charging infrastructure timelines are uncertain, but they are unwilling to order vessels that cannot scale to full electrification. Suppliers able to offer scalable modular ESS with pre-installed interface bases and BMS headroom will structurally win large public ferry contracts over the next 3–5 years.",
       "confidence": "High"
     },
     {
-      "label": "Battery Retrofit Market Emerging as Standalone Revenue Stream",
-      "observation": "AYK Energy's Aurora Botnia retrofit (world's largest RoPax battery retrofit), Echandia's replacement of Ellen's NMC with LTO, and Scandlines' plug-in hybrid retrofit program all point to a maturing retrofit segment.",
-      "interpretation": "The first generation of maritime ESS (largely NMC, 2014–2020 vintage) is reaching end-of-useful-life in the 2025–2030 window. Suppliers who can certify retrofit products, offer drop-in BMS integration, and provide lifecycle service contracts will capture significant secondary market revenue. This is an underserved market intelligence gap.",
+      "label": "North America Ferry Market Inflecting — Multiple Major Programs Active Simultaneously",
+      "observation": "Three separate North American ferry electrification programs are now in parallel active build or ESS supply phases: BC Ferries Summit Class (Canada, 40 MWh Corvus), Washington State Ferries (USA, 3 × 13+ MWh, Corvus/ABB), and Washington State Ferries terminal charging infrastructure (design-build contract expected 2026). Fleetzero ABS approval opens a domestic US supply option.",
+      "interpretation": "North America is emerging as the world's most active near-term maritime ESS deployment geography outside China, driven by state-level climate mandates and aging public ferry fleets. ESS suppliers without North American service and support capability face a structural disadvantage in winning or retaining these programs.",
       "confidence": "High"
     },
     {
-      "label": "FuelEU Norway Delay Creates Short-Term Demand Uncertainty for Norwegian ESS Pipeline",
-      "observation": "FuelEU Maritime delayed in Norway to no earlier than 1 January 2028, pushing the compliance timeline 18+ months beyond original expectations.",
-      "interpretation": "Norwegian-flagged ferry and RoPax operators face reduced regulatory urgency for compliance-driven ESS upgrades in the near term. However, operators with EU-route exposure remain under FuelEU discipline. Expect some Norwegian project timelines to slip 12–24 months, creating pipeline visibility risk for suppliers heavily weighted to Norwegian customers.",
+      "label": "Chinese Suppliers Pursuing Dual-Track International Strategy: Direct Entry + Western Partnerships",
+      "observation": "CATL's CAEV subsidiary is pursuing direct international expansion (Ship-Shore-Cloud, Maersk partnership). BYD Energy Storage is simultaneously pursuing a partnership route via Corvus Energy MoU. AYK Energy manufactures at Zhuhai but deploys through Western maritime channels.",
+      "interpretation": "Chinese battery manufacturers are hedging market access risk: direct entry faces regulatory and brand barriers in Europe and North America, while JV/MoU routes with established Western brands accelerate certification and customer trust. European and North American integrators partnering with Chinese cell suppliers gain cost leverage but risk IP dependency and supply chain concentration.",
       "confidence": "Medium"
     },
     {
-      "label": "Chinese Battery Manufacturers Escalating Maritime Market Entry",
-      "observation": "CATL/CAEV now at ~900 vessels, BYD active in RoPax and patrol vessel segments, EVE Energy securing marine certifications, AYK manufacturing in Zhuhai (Chinese production, European brand). A 742 TEU Chinese electric coastal container vessel entered service April 2026.",
-      "interpretation": "The cost gap between Chinese LFP manufacturers and European integrators is widening. European suppliers must differentiate on service network, classification relationships, integration capability, and lifecycle support — rather than cell price. The risk of Chinese manufacturers securing European classification approvals (CCS already active; CATL seeking DNV/LR) and entering European ferry markets within 3–5 years is real.",
-      "confidence": "High"
+      "label": "Battery Replacement Market Emerging as Distinct Revenue Stream",
+      "observation": "Echandia's replacement of E/F Ellen's 4.3 MWh NMC system with a 3.2 MWh LTO system after 8 years of operation demonstrates that early-generation NMC installations are now entering end-of-life replacement cycles.",
+      "interpretation": "As the first generation of maritime battery installations (2015–2019, predominantly NMC) approaches 8–10 year service lifetimes, a discrete aftermarket replacement opportunity is emerging. Suppliers with LTO or second-generation LFP products offering demonstrably longer lifespans (15–25 years) are well positioned to capture this market. This is particularly relevant for European electric ferry operators.",
+      "confidence": "Medium"
     },
     {
-      "label": "Port ESS Infrastructure Financing Models Maturing",
-      "observation": "Seacap + Shorly partnership (Aug 2026) combines €300M+ infrastructure capital with technology-neutral EMS software to fund shore power, battery banks, and port energy hubs across Europe.",
-      "interpretation": "Third-party financing models for port electrification infrastructure are emerging. This decouples port ESS investment from municipal capital budgets — the primary barrier to port electrification. As these models scale, demand for port-side containerized ESS and shore power integration equipment will accelerate.",
-      "confidence": "Medium"
+      "label": "FuelEU Maritime Penalty Phase Active — Document of Compliance Deadline Passed",
+      "observation": "FuelEU Maritime's first full compliance cycle completed its June 30, 2026 DoC issuance deadline. From May 1, 2026, shipping companies whose vessels fail GHG intensity limits face financial penalties. UK ETS maritime extension launched July 1, 2026.",
+      "interpretation": "Regulatory cost of non-compliance is now real and quantifiable for European operators. Hybrid battery systems, which reduce fuel consumption and GHG intensity without requiring full vessel replacement, are increasingly attractive as a near-term compliance tool. This should accelerate retrofit ESS demand on vessels calling at EU/EEA ports in the 2026–2030 timeframe.",
+      "confidence": "High"
     }
   ],
   "projects_30d": [
     {
-      "project": "BC Ferries Summit Class (Summit Arbutus, Cedar, Maple, Spruce)",
-      "type": "Hybrid-Electric Double-Ended Passenger & Car Ferry",
-      "geography": "Canada (BC) — built China (Weihai)",
-      "suppliers": "Corvus Energy (Dolphin NxtGen Power ESS), LMG Marin (design)",
-      "ess_scope": "40 MWh installed (10 MWh/vessel); infrastructure pre-sized for 70 MWh/vessel future expansion",
-      "status": "Contract awarded 11 Aug 2026. First vessel delivery 2029, all four by 2031.",
+      "project": "BC Ferries Summit Class — 4× Double-Ended Hybrid-Electric Ferries",
+      "type": "Hybrid-Electric Ferry (Newbuild)",
+      "geography": "Canada (BC) / Built in China (Weihai)",
+      "suppliers": "Corvus Energy (ESS — Dolphin NxtGen Power), LMG Marin (design)",
+      "ess_scope": "10 MWh installed per vessel (40 MWh total); pre-wired for 70 MWh/vessel upgrade",
+      "status": "Contract awarded 11 Aug 2026; first delivery 2029, all four by 2031",
       "priority": "High",
       "source_date": "11 Aug 2026"
     },
     {
-      "project": "Fleetzero Leviathan First Commercial Deployment",
-      "type": "Hybrid-Electric Vessel Conversion (vessel identity not disclosed)",
-      "geography": "United States",
-      "suppliers": "Fleetzero (Leviathan LFP ESS, ABS PDA approved)",
-      "ess_scope": "10 MWh",
-      "status": "ABS PDA granted 11 Aug 2026. Commercial deployment targeted H2 2026.",
+      "project": "Fleetzero Leviathan — ABS Product Design Assessment",
+      "type": "Class Approval / Technology Certification",
+      "geography": "USA (Houston, TX)",
+      "suppliers": "Fleetzero (system integrator, US-manufactured LFP)",
+      "ess_scope": "First commercial deployment: 10 MWh for hybrid-electric vessel conversion, H2 2026",
+      "status": "ABS PDA issued 12 Aug 2026; first commercial deployment on water H2 2026",
       "priority": "High",
-      "source_date": "11 Aug 2026"
-    },
-    {
-      "project": "Seacap + Shorly Port Electrification Platform Launch",
-      "type": "Port Shore Power & Battery Infrastructure",
-      "geography": "Norway and Europe (multi-port)",
-      "suppliers": "Seacap (financing), Shorly/Havnekraft (EMS software); technology-neutral on hardware",
-      "ess_scope": "Not disclosed per project; platform targets shore power, battery banks, and port energy hubs across European ports",
-      "status": "Partnership announced 12 Aug 2026. Active deployment pipeline not disclosed.",
-      "priority": "Medium",
       "source_date": "12 Aug 2026"
     },
     {
-      "project": "Scylla Shipping Riviera Reflection & Harmonie River Cruise Vessels",
-      "type": "Battery-Hybrid River Cruise Vessel",
+      "project": "Washington State Ferries — 3× New Hybrid-Electric Ferries Steel-Cutting",
+      "type": "Hybrid-Electric Ferry (Newbuild)",
+      "geography": "USA (built at Eastern Shipbuilding Group, Panama City FL)",
+      "suppliers": "Corvus Energy (ESS, confirmed Feb 2026 via ABB Marine & Ports), ABB (propulsion), Eastern Shipbuilding (builder)",
+      "ess_scope": "13+ MWh battery banks per vessel (not disclosed precisely); diesel-electric hybrid",
+      "status": "Steel-cutting ceremony 5 Aug 2026; third vessel option exercised; delivery 2030–2032",
+      "priority": "High",
+      "source_date": "05 Aug 2026"
+    },
+    {
+      "project": "Scylla Shipping — Riviera Reflection & Harmonie River Cruise Vessels",
+      "type": "Hybrid Battery River Cruise (Newbuild)",
       "geography": "Europe (inland waterways)",
       "suppliers": "Corvus Energy (ESS)",
-      "ess_scope": "Not disclosed",
-      "status": "Contract awarded July 2026. Vessels enable emission-free port entry, peak shaving, and lock operations on battery.",
+      "ess_scope": "Not disclosed; battery hybrid for emission-free port entry, peak shaving, lock operations",
+      "status": "Contract awarded July 2026",
       "priority": "Medium",
       "source_date": "10 Jul 2026"
     },
     {
-      "project": "Grimaldi Group 9-Vessel RoPax Fleet — AYK Energy OrionAN",
-      "type": "New RoPax Vessels (Mediterranean + Baltic)",
-      "geography": "Mediterranean (Grimaldi/Minoan) and Baltic (Finnlines)",
-      "suppliers": "AYK Energy (OrionAN, DNV type approved)",
-      "ess_scope": "18.6 MWh total (2,073 kWh per vessel × 9 vessels)",
-      "status": "Contract announced June–July 2026. Vessels built at China Merchants Jinling Shipyard (Weihai). Delivery 2028–2030.",
+      "project": "Grimaldi Group — 9× Next-Generation RoPax Vessels",
+      "type": "Hybrid Battery RoPax (Newbuild)",
+      "geography": "Mediterranean (Grimaldi Lines/Minoan Lines) and Baltic (Finnlines)",
+      "suppliers": "AYK Energy (OrionAN 2,073 kWh per vessel)",
+      "ess_scope": "~18,657 kWh (approx. 18.7 MWh) total fleet capacity",
+      "status": "Contract confirmed Jul 2026; vessels built at China Merchants Jinling (Weihai); delivery 2028–2030",
       "priority": "High",
-      "source_date": "30 Jun 2026"
+      "source_date": "01 Jul 2026"
     },
     {
-      "project": "Ning Yuan Dian Kun — 742 TEU Pure Electric Coastal Container Vessel",
-      "type": "Pure Electric Coastal Container Ship",
-      "geography": "China (Ningbo–Zhapu route)",
-      "suppliers": "Not disclosed (containerized battery powerpack system, likely CATL/CAEV ecosystem)",
-      "ess_scope": "~20 MWh (10 containerized battery units)",
-      "status": "Entered commercial service April 2026.",
+      "project": "E/F Ellen (Ærøfærgerne) — NMC-to-LTO Battery Replacement",
+      "type": "Battery Replacement / Retrofit",
+      "geography": "Denmark",
+      "suppliers": "Echandia (3.2 MWh LTO system replacing 4.3 MWh NMC)",
+      "ess_scope": "3.2 MWh LTO; designed for 15-year lifetime, multiple daily fast-charge cycles",
+      "status": "Commissioned May 2026; in revenue service",
       "priority": "Medium",
-      "source_date": "15 Apr 2026"
+      "source_date": "May 2026"
     }
   ],
   "projects_2026": [
     {
-      "project": "BC Ferries Summit Class (4 vessels)",
-      "type": "Hybrid-Electric Ferry",
-      "geography": "Canada",
-      "suppliers": "Corvus Energy (Dolphin NxtGen Power)",
-      "ess_scope": "40 MWh installed; pre-wired for 280 MWh total future capacity across 4 vessels",
-      "delivery": "2029–2031",
-      "priority": "High",
-      "is_new": true
-    },
-    {
-      "project": "Matson Aloha Class Containerships (3 vessels)",
-      "type": "LNG-Hybrid Containership",
-      "geography": "United States (Jones Act)",
-      "suppliers": "Kongsberg Maritime (Hybrid Electrical System), Corvus Energy (Orca ESS, 1,492 kWh/vessel)",
-      "ess_scope": "~4.5 MWh total (1,492 kWh × 3 vessels, peak shaving / spinning reserve role)",
-      "delivery": "2026–2027 (first vessel due 2026)",
-      "priority": "High",
-      "is_new": false
-    },
-    {
-      "project": "Washington State Ferries Hybrid-Electric Newbuilds (2+1 option)",
-      "type": "Hybrid-Electric Passenger/Vehicle Ferry",
-      "geography": "United States (Pacific Northwest)",
-      "suppliers": "Corvus Energy (ESS), ABB Marine & Ports (systems integrator)",
-      "ess_scope": "Not disclosed",
-      "delivery": "Not disclosed (under construction at Eastern Shipbuilding Group)",
-      "priority": "High",
-      "is_new": false
-    },
-    {
-      "project": "Germany Polarstern Polar Research Vessel",
-      "type": "Diesel-Electric Ice Class Research Vessel",
+      "project": "AYK Energy / Wärtsilä — Polarstern II Polar Research Vessel",
+      "type": "Diesel-Electric Hybrid Ice-Class Research Vessel (Newbuild)",
       "geography": "Germany (Alfred Wegener Institute)",
-      "suppliers": "AYK Energy (Pisces+ 16 MWh), Wärtsilä (electrical integrator)",
-      "ess_scope": "16 MWh, 131 tonnes",
-      "delivery": "Battery delivery 2028; vessel entry into service 2030",
+      "suppliers": "AYK Energy (16 MWh Pisces+ system); Wärtsilä (electrical integrator)",
+      "ess_scope": "16 MWh, 131 tonnes; largest battery on an ice-class vessel",
+      "delivery": "Battery delivery 2028; vessel in service 2030",
       "priority": "High",
       "is_new": false
     },
     {
-      "project": "MV Yampu — World's First Battery-Powered Self-Unloading Bulk Carrier (CSL / Adbri Cement)",
-      "type": "Diesel-Electric Self-Unloading Bulk Carrier",
+      "project": "AYK Energy — MV Yampu Self-Unloading Bulk Carrier (CSL / Adbri Cement)",
+      "type": "Diesel-Electric Hybrid Bulk Carrier (Newbuild)",
       "geography": "Australia (South Australia limestone operations)",
-      "suppliers": "AYK Energy (16 MWh battery system)",
-      "ess_scope": "16 MWh",
-      "delivery": "2028",
+      "suppliers": "AYK Energy (16 MWh system, not disclosed product line)",
+      "ess_scope": "16 MWh, 131 tonnes",
+      "delivery": "Battery delivery 2028",
       "priority": "Medium",
       "is_new": false
     },
     {
-      "project": "Echandia Core — Singapore Harbor Tug (first order)",
-      "type": "Electric Tug",
-      "geography": "Singapore",
-      "suppliers": "Echandia (LTO, 25-year lifespan target)",
-      "ess_scope": "Not disclosed",
-      "delivery": "Not disclosed; part of Singapore's 2030 harbor craft electrification plan",
-      "priority": "Medium",
-      "is_new": false
-    },
-    {
-      "project": "India Green Tug Transition Programme — Deendayal Port (Kandla) — Echandia",
-      "type": "Fully Electric Tug",
-      "geography": "India (Kandla Port)",
-      "suppliers": "Echandia (4.4 MWh LTO, 20-year design life)",
-      "ess_scope": "4.4 MWh",
-      "delivery": "Not disclosed",
-      "priority": "Medium",
-      "is_new": false
-    },
-    {
-      "project": "Grimaldi Group 9-Vessel RoPax Fleet",
-      "type": "New RoPax (Mediterranean + Baltic)",
-      "geography": "Mediterranean and Baltic Sea",
-      "suppliers": "AYK Energy (OrionAN, 2,073 kWh/vessel)",
-      "ess_scope": "18.6 MWh total",
-      "delivery": "2028–2030",
+      "project": "Svitzer Balder — Electric Escort Tug (Uzmar / AYK Energy)",
+      "type": "Battery-Methanol Electric Escort Tug",
+      "geography": "Sweden (Port of Gothenburg)",
+      "suppliers": "AYK Energy (6 MWh AriesA, ABS-certified); Uzmar (builder, Türkiye)",
+      "ess_scope": "6 MWh ABS-certified AriesA system; 90%+ towing ops on battery",
+      "delivery": "Sea trials completed Apr 2026; delivery to Gothenburg Q2/Q3 2026",
       "priority": "High",
+      "is_new": false
+    },
+    {
+      "project": "Echandia — Singapore Harbour Tug (LTO)",
+      "type": "Fully Electric Harbour Tug",
+      "geography": "Singapore",
+      "suppliers": "Echandia (LTO system, 25-year design life)",
+      "ess_scope": "Not disclosed; supports Singapore harbour craft electrification-by-2030 plan",
+      "delivery": "Contract Jan 2026; delivery timeline not disclosed",
+      "priority": "Medium",
+      "is_new": false
+    },
+    {
+      "project": "Echandia — India Green Tug (Deendayal Port / Kandla Port)",
+      "type": "Fully Electric Tug (India's first)",
+      "geography": "India (Kandla Port, Government of India Green Tug Transition Program)",
+      "suppliers": "Echandia (4.4 MWh LTO; 20-year design life)",
+      "ess_scope": "4.4 MWh; zero-emission operation at Kandla Port",
+      "delivery": "Contract Jan 2026; delivery timeline not disclosed",
+      "priority": "Medium",
+      "is_new": false
+    },
+    {
+      "project": "Kongsberg Maritime / MKM Yachts — Scenic Ikon Polar Expedition Vessel",
+      "type": "Hybrid Electric Polar Expedition Vessel (Newbuild)",
+      "geography": "Built at 3 Maj Shipyard, Rijeka, Croatia",
+      "suppliers": "Kongsberg Maritime (ESS + Elegance Pods + DP + automation)",
+      "ess_scope": "Not disclosed; battery hybrid for propulsion and hotel load",
+      "delivery": "2027",
+      "priority": "Medium",
+      "is_new": false
+    },
+    {
+      "project": "Western Australia Electric Ferry Fleet — Perth Swan River (Echo Marine / LR)",
+      "type": "Fully Electric Passenger Ferries (Newbuild × 5)",
+      "geography": "Australia (Perth, Swan River — PTA METRONET program)",
+      "suppliers": "Echo Marine Group (integrator); Lloyd's Register (classification/technical assurance); ESS supplier not disclosed",
+      "ess_scope": "Not disclosed",
+      "delivery": "First vessel in service 2027",
+      "priority": "Medium",
       "is_new": false
     }
   ],
   "technology_bullets": [
     {
-      "title": "Corvus Dolphin NxtGen: Upgrade-Path Architecture as Commercial Strategy",
-      "body": "The BC Ferries Summit Class contract reveals a key commercial architecture embedded in the Dolphin NxtGen platform: vessels are initially installed with 10 MWh of active battery capacity, but the battery interface bases and pack control systems are pre-sized for 70 MWh total per vessel. This 'install-and-expand' model embeds Corvus into the vessel's lifecycle from day one and makes a future competitive displacement prohibitively complex. For integrators, this signals that specifying expansion headroom at contract stage is becoming a best practice and a differentiator in ferry operator RFPs."
+      "title": "Upgrade-Ready ESS Architecture: The New Ferry Procurement Imperative",
+      "body": "The BC Ferries Summit Class award reveals a maturing procurement standard: operators order hybrid vessels today but require that the ESS architecture physically accommodates full-electric operation in the future. Corvus's Dolphin NxtGen system for BC Ferries is initially installed at 10 MWh but the battery interface bases and pack control systems are sized to accept up to 70 MWh per hull. This 'buy now, upgrade later' architecture shifts ESS design requirements upstream — BMS scalability, bus topology, cabinet pre-wiring, and structural weight reserves must all be engineered into the original hull. Suppliers unable to offer credible upgrade pathways are increasingly excluded from shortlists for large public ferry programs."
     },
     {
-      "title": "Fleetzero Leviathan: Modular Containerized LFP at 1,000 VDC — US Domestic Supply Chain Milestone",
-      "body": "The Leviathan system's 1,000 VDC operating voltage is at the upper boundary of current marine ESS practice, enabling higher power delivery with lower current draw and reduced conductor weight — meaningful for large vessel applications. Its modular, containerized and IP67-rated design allows units to be specified, swapped, and redeployed across vessel classes without class re-approval of the installation, simplifying lifecycle management. As the first ABS-approved US-manufactured LFP marine battery, it is directly relevant to Jones Act vessel programs and potentially to US Navy auxiliary ship electrification where domestic sourcing requirements apply."
+      "title": "LTO Fights Back on CAPEX: Echandia Core Targets the Price Gap With LFP",
+      "body": "Echandia's Core launch (Jun 2026) directly acknowledges that LTO's main commercial barrier is upfront investment, not lifecycle cost. By claiming a 30% reduction in both CAPEX and installation footprint versus its previous generation, Echandia is attempting to close the price gap that has driven ferry operators toward LFP over the past three years. The engineering approach — leveraging cell format optimization and simplified system integration — rather than chemistry change preserves LTO's safety and cycle-life advantages while attacking the cost structure. If validated in commercial deployments, this could re-open segments where LFP was previously selected purely on first-cost grounds."
     },
     {
-      "title": "Echandia Core: LTO Cost Breakthrough Targeting Wider Addressable Market",
-      "body": "Echandia's Core platform, launched June 2026, reportedly delivers a 30% reduction in upfront cost and installation footprint compared to Echandia's previous LTO systems — directly attacking the primary barrier to LTO adoption in maritime (first-cost premium vs LFP). LTO's key advantages — ultra-fast charge capability, >15,000 cycle life, minimal capacity degradation, and inherently safer anode chemistry — have been commercially available since ~2018 but remained price-prohibitive for smaller vessel programs. If Core achieves its stated cost reduction at volume, it positions Echandia to compete with LFP on total cost of ownership in high-cycle duty (frequent charging ferries, harbor tugs) while retaining safety and lifecycle superiority."
+      "title": "Immersion Cooling ESS: Hanwha's Safety Differentiation Play for High-Risk Marine Environments",
+      "body": "Hanwha Aerospace has introduced what it describes as the world's first immersion-cooling maritime ESS, certified by both DNV and the Korean Register of Shipping. The system submerges battery cells in a non-flammable thermal fluid, preventing thermal runaway propagation and eliminating the fire propagation risks associated with air or conventional liquid cooling. While immersion cooling is established in data center and some EV applications, marine qualification represents a significant engineering step given vibration, inclination, and salt atmosphere requirements. If scaled commercially, immersion cooling could become a differentiating safety standard for high-stakes applications including naval, cruise, and offshore vessels where thermal runaway consequences are extreme."
     },
     {
-      "title": "Battery-to-Battery Replacement: NMC-to-LTO Conversion on E/F Ellen Establishes Retrofit Reference Case",
-      "body": "The replacement of the Ellen ferry's original 4.3 MWh NMC system with a 3.2 MWh Echandia LTO system demonstrates that chemically superior but lower-capacity systems can outperform higher-capacity legacy installations in real-world high-cycle duty. The NMC system showed uneven wear and reduced capacity after 8 years of intensive fast-charging service — a predictable degradation pattern for NMC under this duty cycle. The LTO replacement targets a 15-year design life with multiple daily fast-charging cycles. This case provides a strong reference data point that the maritime retrofit market will grow substantially as 2016–2020 vintage NMC installations reach end of useful life over the next 3–6 years."
+      "title": "NMC End-of-Life Cycle Beginning: Battery Replacement Market Taking Shape",
+      "body": "The replacement of E/F Ellen's original 4.3 MWh NMC system with Echandia's 3.2 MWh LTO system after 8 years of intensive operation marks the first commercially publicized large-scale marine battery replacement project. The capacity reduction (4.3 → 3.2 MWh) alongside a longer design life (15 years) and faster charge capability illustrates how second-generation systems are delivering operational superiority despite lower nominal energy. With the majority of Europe's first-generation electric ferry battery installations (2015–2019 vintage, predominantly NMC) now approaching the 7–10 year service life threshold, a structured aftermarket replacement market is emerging. Suppliers with proven marine LTO or advanced LFP products and established relationships with European ferry operators are best positioned to capture this pipeline."
     },
     {
-      "title": "CATL Ship-Shore-Cloud: Vertical Integration as Market Entry Strategy",
-      "body": "CATL's CAEV subsidiary is not entering maritime as a cell supplier — it is deploying a vertically integrated Ship-Shore-Cloud platform that bundles onboard battery systems, shore charging and battery-swapping networks, cloud-based fleet dispatch, remote monitoring, and energy management into a single contract. This eliminates the multi-supplier coordination friction that has historically been a barrier to maritime electrification at scale — and locks customers into a CATL ecosystem for 20–30 year vessel lifecycles. European and North American ESS suppliers should treat CAEV's international certification ambitions (DNV, LR, ABS) as a strategic threat timeline rather than a distant eventuality."
+      "title": "US-Made LFP Classification: Fleetzero Leviathan Opens Domestic Supply Path",
+      "body": "The ABS Product Design Assessment for Fleetzero's Leviathan system at 1,000 VDC, IP67, with a 2–98% usable depth of discharge in a modular containerized form factor is technically competitive with established European and Chinese marine LFP systems. More strategically, its US manufacture addresses Jones Act compliance requirements, Buy America provisions embedded in federal infrastructure funding (including WSF's $3.98 billion electrification program), and US Navy supply chain security concerns. The modular, containerized design also supports rapid deployment and vessel-to-vessel redeployment — a capability relevant to both commercial retrofit projects and naval logistics."
     }
   ],
   "competitive_snapshot": [
     {
       "supplier": "Corvus Energy",
-      "chemistry": "LFP (Dolphin NxtGen platform)",
-      "position": "Market leader in European and North American ferry ESS; >1,300 installations; strongest presence in high-capacity hybrid ferry segment.",
-      "direction": "Expanding. BC Ferries Summit Class win (40 MWh, upgrade to 280 MWh) and Washington State Ferries contract extend dominance in public transit ferry segment. Dolphin NxtGen with upgrade-path architecture is a commercial differentiator. Under BW Group ownership since 2021."
-    },
-    {
-      "supplier": "Echandia",
-      "chemistry": "LTO (Ultra, Robust, Core platforms)",
-      "position": "Premium LTO specialist with >100 systems delivered; strong in high-cycle ferry, tug, and naval applications; growing defense exposure (NATO frigate ESS).",
-      "direction": "Expanding. Core product launch directly addresses cost barrier. Ellen replacement win establishes retrofit credibility. SEK 325M (≈$36M) funding round (July 2025) funding product and market development. Navy/defense revenue stream emerging."
+      "chemistry": "LFP (Dolphin NxtGen, Blue Whale NxtGen) / NMC legacy",
+      "position": "Dominant European/North American marine ESS integrator; multiple active major ferry programs (BC Ferries, WSF, CMAL/Scotland, Matson containerships); deep lifecycle support capability",
+      "direction": "Strengthening — BC Ferries win extends North American dominance; BYD MoU signals cell supply chain diversification; Dolphin NxtGen architecture with upgrade pathways is becoming the industry reference design for large ferry ESS"
     },
     {
       "supplier": "AYK Energy",
       "chemistry": "LFP (Pisces, Pisces+, OrionAN, OrionAN+, AriesA)",
-      "position": "Fast-growing challenger. DNV-approved LFP product range. Claims first-mover on type-approved marine LFP. Manufacturing in Zhuhai (300 MWh/yr capacity). Multi-segment pipeline: RoPax, escort tug, polar research, bulk carrier, containership.",
-      "direction": "High growth. Grimaldi (9-vessel), Polarstern (16 MWh via Wärtsilä), MV Yampu (16 MWh), Svitzer Balder escort tug all won in 2026. Challenging Corvus and Echandia with cost-competitive LFP and aggressive multi-sector strategy."
+      "position": "Rapidly scaling from retrofit specialist to volume newbuild supplier; DNV type-approved full product range; manufacturing at Zhuhai (300 MWh/yr, expandable to 1 GWh); active across RoPax, escort tugs, icebreakers, bulk carriers",
+      "direction": "Strongly ascending — Grimaldi nine-vessel deal, Polarstern, Svitzer Balder, and MV Yampu in a single year represents a step-change in commercial scale and vessel type diversity"
     },
     {
-      "supplier": "Fleetzero",
-      "chemistry": "LFP (Leviathan platform)",
-      "position": "Emerging US domestic challenger. ABS PDA approved August 2026 — first US-manufactured LFP marine battery with class approval.",
-      "direction": "Entering. First commercial deployment imminent (10 MWh, H2 2026). Strategic differentiation on US domestic manufacturing for Jones Act and federal procurement programs. Scale and track record to be established."
+      "supplier": "Echandia",
+      "chemistry": "LTO (Ultra, Robust, Core platforms)",
+      "position": "Leading LTO marine ESS specialist; SEK 325M investment (Jul 2025) funding growth; reference installations across Europe, Asia, naval; first NMC-to-LTO replacement project completed",
+      "direction": "Consolidating — Core launch addresses CAPEX barrier; naval frigate deliveries and Singapore/India tug wins extend geography; aftermarket replacement pipeline emerging as new revenue stream"
     },
     {
-      "supplier": "Kongsberg Maritime",
-      "chemistry": "Agnostic — ESS integrator sourcing from Corvus Energy primarily",
-      "position": "Dominant integrated system provider (propulsion + DP + automation + ESS). Largest installed base on offshore and specialty vessels. Independent listed entity from April 2026.",
-      "direction": "Stable-to-expanding. ESS sold as part of system packages rather than standalone; dependent on cell/module partners. Independence from Kongsberg Gruppen may accelerate commercial aggression."
+      "supplier": "Hanwha Aerospace",
+      "chemistry": "Lithium-ion (submarine/naval heritage); immersion-cooled marine ESS",
+      "position": "Korean naval-heritage ESS supplier expanding into commercial vessels; immersion-cooling ESS certified by DNV and KR; SEAM acquisition extends European electric propulsion footprint",
+      "direction": "Ascending — immersion-cooling product is a genuine safety differentiator; Hanwha Engine/SEAM integration creates naval + commercial hybrid propulsion stack; hydrogen fuel cell AiP adds future optionality"
     },
     {
       "supplier": "CATL / CAEV",
-      "chemistry": "LFP (containerized powerpack and modular marine formats)",
-      "position": "~900 vessels delivered predominantly in China. Ship-Shore-Cloud platform launched. Targeting coastal and future ocean-going segments.",
-      "direction": "Aggressively expanding. Moving from inland/coastal China to international markets. If DNV/ABS/LR international approvals obtained (likely within 2–3 years), CATL will be a structural disruptor in European and North American markets."
+      "chemistry": "LFP (prismatic, CATL cell technology)",
+      "position": "~900 vessels globally (predominantly China inland/coastal); Ship-Shore-Cloud integrated electrification platform; Maersk strategic partnership; ~40% global electric vessel market share (cell supply basis)",
+      "direction": "Aggressively expanding — pursuing full-stack integration model beyond cell supply; international breakthrough depends on Western certification acceptance and geopolitical trade conditions"
     },
     {
-      "supplier": "Hanwha",
-      "chemistry": "LFP (marine division; HES battery systems)",
-      "position": "South Korean integrated energy conglomerate with shipbuilding (Philly Shipyard), battery, propulsion, and aerospace arms. RINA MoU for hybrid propulsion RoPax development.",
-      "direction": "Entering. Building certification and integration credibility through RINA partnership. Positioned as South Korea's answer to an integrated maritime electrification platform. Watch for Korean domestic ferry and naval electrification contracts as proving ground."
+      "supplier": "Fleetzero",
+      "chemistry": "LFP (Leviathan system, US-manufactured)",
+      "position": "Emerging US domestic marine LFP ESS supplier; first US-made LFP to receive ABS classification; targeting Jones Act, Buy America, and federal ferry electrification programs",
+      "direction": "Early-stage breakthrough — ABS PDA is the key unlock; commercial credibility depends on successful H2 2026 first deployment and subsequent reference project development"
+    },
+    {
+      "supplier": "Kongsberg Maritime",
+      "chemistry": "NMC/LFP (via SAVe Energy and third-party cells); system integrator role",
+      "position": "Established maritime hybrid systems integrator (K-Power EMS, ESS Deckhouse); independent Oslo listing (Apr 2026) as KMAR; active on Matson Aloha Class and Scenic Ikon",
+      "direction": "Neutral/Watching — independence from Kongsberg Gruppen may catalyze strategic moves; faces competition from pure-play ESS specialists and Chinese integrated solutions at both the cell and system level"
     }
   ],
   "regulatory_watch": [
     {
-      "body": "Norway / EEA",
-      "update": "FuelEU Maritime (EU Regulation 2023/1805) confirmed delayed in Norway to no earlier than 1 January 2028 (Norwegian Maritime Authority, 11 Aug 2026). Previously expected 2026. Norwegian and Icelandic ports remain third-country ports under FuelEU; only 50% of energy on Norway–EU voyages counted for compliance.",
-      "impact": "Reduces short-term compliance-driven demand pressure for Norwegian ferry and RoPax operators. May delay ESS investment decisions for vessels operating exclusively in Norwegian waters. Does not affect operators with EU-port call exposure. Long-term Norwegian FuelEU alignment remains certain.",
+      "body": "IMO Sub-Committee SSE 12 / SDC",
+      "update": "SSE 12 (Mar 2026) agreed to develop technology-neutral interim guidelines for onboard battery ESS safety. Correspondence group established; reports to SDC session May 2027. SDC workplan targets SOLAS II-1/41 amendments by 2028 (MSC 111) to allow batteries as primary electrical power source.",
+      "impact": "Defines the regulatory architecture under which all future battery-primary vessels will be built. Suppliers and integrators should track the correspondence group's output closely for early signal on fire suppression, BMS, and monitoring requirements that will shape product design from 2027 onward.",
       "urgency": "Actionable"
     },
     {
-      "body": "IMO / SSE 12 / SDC",
-      "update": "IMO SSE 12 (March 2026) agreed to develop technology-neutral interim guidelines for onboard Battery ESS safety. Correspondence group formed; reports to SDC at next session (May 2027). Separately, IMO SDC workplan targets SOLAS II-1/41 amendments by 2028 to allow batteries as primary electrical power source. IMO IMDG Code Amendment 42-24 in mandatory force from 1 January 2026 — includes stricter packaging/testing for lithium batteries and new UN numbers.",
-      "impact": "The 2027–2028 window is the hard regulatory boundary for battery-primary vessel design submissions under SOLAS. Interim guidelines (2026–2027 development) will create a pre-formal-approval certification pathway. IMDG 42-24 enforcement affects battery transport and logistics chains immediately.",
+      "body": "EU / FuelEU Maritime",
+      "update": "FuelEU Maritime completed its first full compliance cycle in H1 2026. June 30, 2026 deadline passed for valid FuelEU Documents of Compliance. Financial penalties for non-compliance are active from May 1, 2026. EU ETS maritime scope review underway in 2026 — potential extension to vessels 400–5,000 GT. UK ETS maritime launched July 1, 2026.",
+      "impact": "Financial penalties for GHG intensity non-compliance are now live for European operators. Hybrid battery systems that demonstrably reduce fuel consumption and GHG intensity qualify as a near-term compliance pathway without full vessel replacement. ESS retrofit demand for EU-trading vessels in the 5,000+ GT range should accelerate through 2027.",
       "urgency": "Actionable"
     },
     {
-      "body": "ABS",
-      "update": "ABS issued Product Design Assessment (PDA) to Fleetzero for Leviathan LFP Battery ESS (11 Aug 2026). First US-manufactured LFP marine battery to receive ABS classification approval. Separate from type approval — PDA confirms design review for marine application and supports use in future classed projects.",
-      "impact": "Establishes a new ABS-approved US domestic marine LFP ESS supplier. Relevant to Jones Act newbuilds, US Coast Guard-regulated vessels, and federal procurement programs with domestic content requirements. Creates regulatory precedent for US-manufactured LFP in classed marine applications.",
+      "body": "IMO / IMDG Code Amendment 42-24",
+      "update": "IMDG Code Amendment 42-24 entered mandatory enforcement January 1, 2026. Key changes include new UN numbers for vehicles and systems powered by lithium-ion, lithium metal, and sodium-ion batteries; stricter packaging requirements including 3-meter stacking test for PI966/PI967 (lithium-ion battery packing instructions).",
+      "impact": "All marine battery shipments (cell modules, battery packs, containerized ESS) must now comply with revised classification, labeling, and packaging requirements. Misdeclaration risk is heightened. Suppliers shipping batteries internationally should audit compliance with updated UN numbers and packaging instruction chapters.",
+      "urgency": "Actionable"
+    },
+    {
+      "body": "IMO / MARPOL Annex VI",
+      "update": "Canadian Arctic and Norwegian Sea designated as Emission Control Areas (ECA) under MARPOL Annex VI amendments (MEPC.392(82)). Sulphur compliance (≤0.10% fuel) enforced from March 1, 2027. These are the first new ECAs established in over a decade.",
+      "impact": "Vessels operating Arctic and Norwegian Sea routes face strict SOx compliance from Q1 2027. Battery hybrid systems enabling low-load or zero-emission operation during ECA transits reduce scrubber dependency and fuel switching complexity. Relevant for offshore support, research, and icebreaking vessel segments.",
       "urgency": "Relevant"
     }
   ],
@@ -373,7 +369,7 @@
       },
       {
         "supplier": "AYK Energy",
-        "high": 4,
+        "high": 3,
         "medium": 1
       },
       {
@@ -383,21 +379,21 @@
       },
       {
         "supplier": "Fleetzero",
-        "high": 2,
+        "high": 1,
         "medium": 0
       },
       {
-        "supplier": "CATL/CAEV",
-        "high": 2,
+        "supplier": "Hanwha",
+        "high": 1,
         "medium": 1
       },
       {
-        "supplier": "Kongsberg Maritime",
+        "supplier": "CATL/CAEV",
         "high": 1,
         "medium": 2
       },
       {
-        "supplier": "Hanwha",
+        "supplier": "Kongsberg Maritime",
         "high": 0,
         "medium": 2
       }
@@ -405,107 +401,102 @@
     "chemistry_mix": [
       {
         "chemistry": "LFP",
-        "percent": 62
+        "percent": 68
       },
       {
         "chemistry": "LTO",
-        "percent": 22
+        "percent": 18
       },
       {
-        "chemistry": "NMC",
-        "percent": 11
+        "chemistry": "NMC (legacy/declining)",
+        "percent": 9
       },
       {
-        "chemistry": "Other/Not Disclosed",
+        "chemistry": "Other / Not Disclosed",
         "percent": 5
       }
     ],
     "vessel_pipeline": [
       {
-        "type": "Hybrid-Electric Ferry",
+        "type": "Hybrid-Electric Ferries",
+        "count": 14
+      },
+      {
+        "type": "Fully Electric Ferries",
+        "count": 7
+      },
+      {
+        "type": "RoPax / RoRo",
         "count": 9
       },
       {
-        "type": "Fully Electric Ferry",
+        "type": "Offshore Support / PSV",
+        "count": 5
+      },
+      {
+        "type": "Tugs / Workboats",
+        "count": 6
+      },
+      {
+        "type": "River / Inland Cruise",
         "count": 4
       },
       {
-        "type": "Offshore/OSV/Research",
+        "type": "Research / Specialty",
         "count": 3
-      },
-      {
-        "type": "Tug / Workboat",
-        "count": 3
-      },
-      {
-        "type": "Containership (hybrid)",
-        "count": 4
-      },
-      {
-        "type": "RoPax (hybrid/electric)",
-        "count": 11
-      },
-      {
-        "type": "River Cruise",
-        "count": 2
       }
     ],
     "mwh_contracts": [
       {
         "label": "BC Ferries Summit Class (Corvus)",
         "mwh": 40,
-        "color": "#1a6b3c"
+        "color": "#1565C0"
       },
       {
-        "label": "Grimaldi RoPax x9 (AYK)",
+        "label": "Grimaldi RoPax ×9 (AYK)",
         "mwh": 18.7,
-        "color": "#e84b1a"
+        "color": "#F57C00"
       },
       {
-        "label": "Polarstern Research Vessel (AYK)",
+        "label": "WSF ×3 New Ferries (Corvus/ABB)",
+        "mwh": 39,
+        "color": "#1565C0"
+      },
+      {
+        "label": "Polarstern II (AYK/Wärtsilä)",
         "mwh": 16,
-        "color": "#e84b1a"
+        "color": "#F57C00"
       },
       {
         "label": "MV Yampu Bulk Carrier (AYK)",
         "mwh": 16,
-        "color": "#e84b1a"
+        "color": "#F57C00"
       },
       {
-        "label": "Fleetzero First Deployment",
-        "mwh": 10,
-        "color": "#0057a8"
-      },
-      {
-        "label": "Wasaline Aurora Botnia Retrofit (AYK)",
-        "mwh": 10.4,
-        "color": "#e84b1a"
-      },
-      {
-        "label": "Svitzer Balder Escort Tug (AYK)",
+        "label": "Svitzer Balder Tug (AYK)",
         "mwh": 6,
-        "color": "#e84b1a"
+        "color": "#F57C00"
       },
       {
-        "label": "Ellen Ferry Replacement (Echandia)",
+        "label": "Fleetzero Leviathan — First Deployment",
+        "mwh": 10,
+        "color": "#388E3C"
+      },
+      {
+        "label": "Scylla Shipping ×2 River Cruise (Corvus)",
+        "mwh": 0,
+        "color": "#1565C0"
+      },
+      {
+        "label": "E/F Ellen LTO Replacement (Echandia)",
         "mwh": 3.2,
-        "color": "#005f9e"
-      },
-      {
-        "label": "India Kandla Green Tug (Echandia)",
-        "mwh": 4.4,
-        "color": "#005f9e"
-      },
-      {
-        "label": "Matson Aloha Class x3 (Corvus/Kongsberg)",
-        "mwh": 4.5,
-        "color": "#1a6b3c"
+        "color": "#7B1FA2"
       }
     ]
   },
   "takeaways": {
-    "matters_now": "This week delivered two landmark developments that will reframe market conversations: the Corvus–BC Ferries 40 MWh Summit Class award establishes the upgrade-path ESS architecture as the new commercial benchmark for large public transit ferries, and the Fleetzero ABS PDA marks the first classified US-domestic LFP marine battery — a supply chain event with direct implications for Jones Act and federal procurement programs. Simultaneously, Norway's FuelEU delay to 2028 introduces near-term demand uncertainty for Norwegian-market suppliers and may push pipeline projects to the right by one to two years. AYK Energy's multi-contract momentum (Grimaldi, Polarstern, Yampu, Svitzer Balder) signals that a third credible tier-one maritime ESS supplier has emerged — LFP-first, Chinese-manufactured, DNV and ABS approved, and winning across segments from escort tug to polar research vessel.",
-    "watch_next": "Monitor Corvus Energy's Dolphin NxtGen product roadmap for any commercial announcements that embed upgrade-path architecture in additional programs — this model, if widely adopted, will systematically extend Corvus's installed base and complicate competitor displacement. Watch for CATL/CAEV's international classification submissions to DNV, LR, or ABS, which would signal the start of a direct market entry into European or North American ferry programs. Track the IMO SSE correspondence group outputs (expected May 2027 SDC session) as these interim guidelines will define the certification pathway for battery-primary vessel designs ahead of the 2028 SOLAS amendment target. The Norway FuelEU delay should be monitored for downstream effects on Norwegian ferry operator procurement timelines — any further delays to EEA incorporation could extend that window further.",
-    "means_for_integrators": "System integrators should immediately evaluate whether their current ESS specifications include upgrade-path capacity headroom — the BC Ferries Summit Class architecture demonstrates that operators will pay a premium for this flexibility and that it creates a multi-decade supplier relationship rather than a one-time sale. The Fleetzero ABS PDA opens a new domestic sourcing option for US-based programs; integrators on Jones Act or federal projects should begin qualification assessments now before competitive pressure builds. AYK Energy's expanding product range and multi-sector win rate warrant formal competitive intelligence tracking — their Wärtsilä partnership on the Polarstern contract shows they are capable of entering established integrator supply chains. Integrators working on vessels with 2016–2020 vintage NMC batteries should proactively scope retrofit opportunities, as the Echandia Ellen case confirms that class-approved drop-in replacements with superior chemistry are commercially and technically viable — and this market will grow substantially between 2026 and 2030."
+    "matters_now": "This week's two headline developments — Corvus Energy's 40 MWh BC Ferries contract and Fleetzero's ABS-approved US-made LFP system — together define the current state of the maritime ESS market: high-capacity hybrid ferry programs with future-proof upgrade architecture are the dominant commercial model in Western markets, while a credible domestic US supply chain is beginning to materialize for the first time. LFP is the de facto winner in chemistry selection across all new contract awards. The FuelEU Maritime penalty phase is now live, converting European regulatory pressure into real financial incentive for hybrid retrofit investments. IMO's parallel work on battery safety guidelines and SOLAS amendments confirms that the regulatory framework for battery-primary vessels is advancing on a defined timetable through 2028.",
+    "watch_next": "The Washington State Ferries terminal charging infrastructure design-build contract is expected to be awarded in 2026 — this will be the largest single shore-power and charging infrastructure contract in the US and will set procurement standards for the $3.98 billion electrification program. Track whether Fleetzero's first 10 MWh Leviathan commercial deployment is confirmed and publicly named, as its success is critical to establishing a domestic US ESS supply chain precedent. Monitor AYK Energy's Zhuhai manufacturing ramp toward its 1 GWh expansion target — output velocity will determine whether the company can fulfill its rapidly growing order book (Grimaldi, Polarstern, Yampu) concurrently. Watch for CATL/CAEV's first major commercial ESS contract outside China — the Maersk partnership and Ship-Shore-Cloud platform suggest international breakthrough is imminent.",
+    "means_for_integrators": "System integrators should take three immediate actions. First, future-proof your ESS specification templates: BC Ferries and WSF programs have established upgrade-ready architecture (pre-wired for 5–7× capacity expansion) as a procurement standard — proposals without this capability will lose on evaluation criteria, not just price. Second, domestic sourcing strategies for North American projects must now include Fleetzero Leviathan as a qualified LFP option alongside European suppliers, particularly for federally funded vessel programs subject to Buy America requirements. Third, the Echandia Core launch signals that the LTO vs. LFP decision is no longer solely a lifecycle cost question — integrators should request updated CAPEX and TCO models from both Echandia and LFP suppliers for the same duty cycle before defaulting to LFP on first-cost grounds, especially for high-cycle ferry applications where LTO's degradation advantages are most commercially relevant."
   }
 }
