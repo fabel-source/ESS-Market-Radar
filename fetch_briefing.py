@@ -147,19 +147,55 @@ Include only verified, sourced information. Mark developments from the last 7 da
 Return only the JSON object as specified."""
 
 
+def extract_json(text: str) -> dict:
+    """Robustly extract the first valid JSON object from a string."""
+    # Strip markdown fences
+    text = re.sub(r"```(?:json)?", "", text).strip()
+
+    # Find the first { and walk forward counting braces to find the matching }
+    start = text.find("{")
+    if start == -1:
+        raise ValueError("No JSON object found in response")
+
+    depth = 0
+    in_string = False
+    escape_next = False
+    for i, ch in enumerate(text[start:], start):
+        if escape_next:
+            escape_next = False
+            continue
+        if ch == "\\" and in_string:
+            escape_next = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                candidate = text[start:i+1]
+                return json.loads(candidate)
+
+    raise ValueError("Could not find matching closing brace in response")
+
+
 def fetch_briefing() -> dict:
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
     print("→ Calling Anthropic API with web search...")
     response = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=8000,
+        max_tokens=16000,
         system=SYSTEM_PROMPT,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": USER_PROMPT}],
     )
 
-    # Extract text from response (may include tool_use blocks)
+    # Extract all text blocks from response (web search adds tool_use blocks)
     full_text = ""
     for block in response.content:
         if hasattr(block, "text"):
@@ -167,16 +203,10 @@ def fetch_briefing() -> dict:
 
     print(f"→ Response received ({len(full_text)} chars)")
 
-    # Parse JSON — strip any accidental markdown fences
-    clean = re.sub(r"```(?:json)?|```", "", full_text).strip()
+    if not full_text.strip():
+        raise ValueError("Empty response from API")
 
-    # Find JSON object bounds
-    start = clean.find("{")
-    end = clean.rfind("}") + 1
-    if start == -1 or end == 0:
-        raise ValueError("No JSON object found in response")
-
-    data = json.loads(clean[start:end])
+    data = extract_json(full_text)
 
     # Ensure generated_at is set
     if not data.get("generated_at"):
