@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESS Market Radar</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg2: #f7f7f6;
+    --border: #e5e4e0;
+    --border2: #d0cfc9;
+    --text: #1a1916;
+    --text2: #5c5a54;
+    --text3: #9c9a94;
+    --radius: 10px;
+    --radius-sm: 6px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --green: #1D9E75;
+    --blue: #378ADD;
+    --orange: #BA7517;
+    --red: #D0342C;
+    --purple: #7F77DD;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1916;
+      --bg2: #242320;
+      --border: #2e2d29;
+      --border2: #3a3935;
+      --text: #f0efe9;
+      --text2: #a8a69e;
+      --text3: #6e6c66;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  /* ── Layout ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+
+  /* ── Topbar ── */
+  .topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .topbar h1 { font-size: 21px; font-weight: 500; margin-bottom: 3px; }
+  .topbar .meta { font-size: 12px; color: var(--text3); display: flex; align-items: center; gap: 6px; }
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); display: inline-block; animation: pulse 2.5s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+  .refresh-btn { font-family: var(--font); font-size: 12px; padding: 6px 14px; border: 1px solid var(--border2); border-radius: var(--radius-sm); background: transparent; color: var(--text2); cursor: pointer; }
+  .refresh-btn:hover { background: var(--bg2); }
+
+  /* ── Slide nav ── */
+  .slide-nav { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 1.4rem; }
+  .snav { font-size: 11px; padding: 4px 11px; border: 1px solid var(--border); border-radius: 20px; cursor: pointer; color: var(--text2); background: transparent; white-space: nowrap; transition: all .15s; }
+  .snav.active, .snav:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+  /* ── Slides ── */
+  .slide { display: none; }
+  .slide.active { display: block; }
+  .slide-header { font-size: 11px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 12px; }
+
+  /* ── Cards ── */
+  .card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 12px; }
+
+  /* ── Metrics row ── */
+  .mrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 1.3rem; }
+  .metric { background: var(--bg2); border-radius: var(--radius-sm); padding: 13px 14px; }
+  .metric .ml { font-size: 11px; color: var(--text2); margin-bottom: 4px; }
+  .metric .mv { font-size: 22px; font-weight: 500; line-height: 1; }
+  .metric .ms { font-size: 11px; color: var(--text3); margin-top: 3px; }
+
+  /* ── Bullets ── */
+  .bullet { font-size: 13px; color: var(--text2); line-height: 1.65; padding: 9px 0; border-bottom: 1px solid var(--border); }
+  .bullet:last-child { border-bottom: none; }
+  .bullet strong { color: var(--text); font-weight: 500; }
+  .bullet .dt { font-size: 10px; color: var(--text3); margin-left: 6px; font-style: italic; }
+
+  /* ── Tables ── */
+  .tbl-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; font-weight: 500; font-size: 11px; color: var(--text3); padding: 7px 9px; border-bottom: 1px solid var(--border2); }
+  td { padding: 8px 9px; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text2); word-break: break-word; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { color: var(--text); font-weight: 500; }
+
+  /* ── Badges ── */
+  .badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  .badge-high, .badge-actionable { background: #fdecea; color: #7f1d1d; }
+  .badge-medium, .badge-relevant { background: #fef3c7; color: #78350f; }
+  .badge-low, .badge-watch { background: #ecfdf5; color: #064e3b; }
+  .badge-new { background: #d1fae5; color: #065f46; }
+  .badge-concept { background: #fef9c3; color: #713f12; }
+  .badge-confidence-high { color: var(--green); font-weight: 600; }
+  .badge-confidence-medium { color: var(--orange); font-weight: 600; }
+
+  /* ── Signals ── */
+  .sig-grid { display: grid; grid-template-columns: 2fr 2fr 70px; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .sig-grid:last-child { border-bottom: none; }
+  .sig-label { font-size: 10px; color: var(--text3); font-weight: 600; margin-bottom: 3px; text-transform: uppercase; letter-spacing: .04em; }
+
+  /* ── Charts ── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } .sig-grid { grid-template-columns: 1fr; } }
+  .chart-title { font-size: 12px; font-weight: 500; margin-bottom: 10px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; font-size: 11px; color: var(--text2); }
+  .legend span { display: flex; align-items: center; gap: 4px; }
+  .ld { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+
+  /* ── Loading / error ── */
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--text3); font-size: 14px; }
+  .error { text-align: center; padding: 3rem 1rem; color: var(--red); font-size: 14px; }
+  .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--text); border-radius: 50%; animation: spin .7s linear infinite; margin-bottom: 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Takeaway buttons ── */
+  .action-btns { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .action-btn { font-family: var(--font); font-size: 12px; padding: 7px 14px; border: 1px solid var(--border2); border-radius: var(--radius-sm); background: transparent; color: var(--text2); cursor: pointer; }
+  .action-btn:hover { background: var(--bg2); }
+
+  /* ── Source note ── */
+  .source-note { font-size: 11px; color: var(--text3); font-style: italic; margin-top: 8px; padding: 0 2px; }
+
+  /* ── Footer ── */
+  footer { text-align: center; font-size: 11px; color: var(--text3); margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div>
+      <h1>ESS Market Radar</h1>
+      <div class="meta">
+        <span class="live-dot"></span>
+        <span id="meta-text">Loading latest briefing…</span>
+      </div>
+    </div>
+    <button class="refresh-btn" onclick="location.reload()">↻ Reload</button>
+  </div>
+
+  <!-- Slide nav -->
+  <div class="slide-nav" id="slide-nav">
+    <div class="snav active" onclick="go(0)">S1 Executive</div>
+    <div class="snav" onclick="go(1)">S2 Suppliers</div>
+    <div class="snav" onclick="go(2)">S3 Signals</div>
+    <div class="snav" onclick="go(3)">S4 Projects (30d)</div>
+    <div class="snav" onclick="go(4)">S5 Projects (2026)</div>
+    <div class="snav" onclick="go(5)">S6 Technology</div>
+    <div class="snav" onclick="go(6)">S7 Competitive</div>
+    <div class="snav" onclick="go(7)">S8 Regulatory</div>
+    <div class="snav" onclick="go(8)">S9 Analytics</div>
+    <div class="snav" onclick="go(9)">S10 Takeaways</div>
+  </div>
+
+  <!-- Slides container -->
+  <div id="slides">
+    <div class="loading">
+      <div class="spinner"></div><br>
+      Loading briefing data…
+    </div>
+  </div>
+
+  <footer>
+    ESS Market Radar · Auto-updated every Friday via GitHub Actions + Anthropic API ·
+    <a href="https://github.com" style="color:var(--text3)">View on GitHub</a>
+  </footer>
+</div>
+
+<script>
+// ── Helpers ────────────────────────────────────────────────────────────────
+const signalClass = s => ({
+  High:'badge-high', Medium:'badge-medium', Low:'badge-low',
+  Actionable:'badge-actionable', Relevant:'badge-relevant', Watch:'badge-watch'
+}[s] || 'badge-low');
+
+const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function badge(text, cls) {
+  return `<span class="badge ${cls}">${esc(text)}</span>`;
+}
+
+// ── Slide builder functions ────────────────────────────────────────────────
+function buildS1(d) {
+  const m = d.metrics || {};
+  const bullets = (d.executive_bullets || []).map(b => `
+    <div class="bullet">
+      <strong>${esc(b.title)}</strong>
+      ${b.is_new ? badge('NEW','badge-new') : ''}
+      <span class="dt">${esc(b.date)}</span><br>
+      ${esc(b.body)}
+    </div>`).join('');
+
+  return `
+    <div class="slide-header">Slide 1 — Executive Summary · ${esc(d.week_label)}</div>
+    <div class="mrow">
+      <div class="metric"><div class="ml">New projects (30d)</div><div class="mv">${m.new_projects_30d ?? '—'}</div></div>
+      <div class="metric"><div class="ml">Supplier moves</div><div class="mv">${m.supplier_moves ?? '—'}</div><div class="ms">High signal: ${m.high_signal_moves ?? '—'}</div></div>
+      <div class="metric"><div class="ml">Regulatory updates</div><div class="mv">${m.regulatory_updates ?? '—'}</div></div>
+      <div class="metric"><div class="ml">Dominant chemistry</div><div class="mv">${esc(m.dominant_chemistry ?? '—')}</div></div>
+    </div>
+    <div class="card">${bullets}</div>`;
+}
+
+function buildS2(d) {
+  const rows = (d.supplier_moves || []).map(r => `
+    <tr>
+      <td>${esc(r.supplier)}</td>
+      <td>${esc(r.update)}</td>
+      <td>${esc(r.strategic_meaning)}</td>
+      <td>${badge(r.signal, signalClass(r.signal))}</td>
+    </tr>`).join('');
+  return `
+    <div class="slide-header">Slide 2 — Supplier Moves This Week</div>
+    <div class="card tbl-wrap">
+      <table><tr><th style="width:14%">Supplier</th><th style="width:33%">Update</th><th style="width:33%">Strategic meaning</th><th style="width:9%">Signal</th></tr>
+      ${rows}</table>
+    </div>`;
+}
+
+function buildS3(d) {
+  const sigs = (d.market_signals || []).map(s => `
+    <div class="sig-grid">
+      <div><div class="sig-label">${esc(s.label)}</div>${esc(s.observation)}</div>
+      <div>${esc(s.interpretation)}</div>
+      <div class="badge-confidence-${s.confidence?.toLowerCase()}">${esc(s.confidence)}</div>
+    </div>`).join('');
+  return `
+    <div class="slide-header">Slide 3 — Market Signals</div>
+    <div class="card">
+      <div class="sig-grid" style="font-size:11px;font-weight:600;color:var(--text3);padding:4px 0">
+        <div>Observation</div><div>Interpretation</div><div>Confidence</div>
+      </div>
+      ${sigs}
+    </div>`;
+}
+
+function buildS4(d) {
+  const rows = (d.projects_30d || []).map(r => `
+    <tr>
+      <td>${esc(r.project)}</td>
+      <td>${esc(r.type)}</td>
+      <td>${esc(r.geography)}</td>
+      <td>${esc(r.suppliers)}</td>
+      <td>${esc(r.ess_scope)}</td>
+      <td>${esc(r.status)}</td>
+      <td>${badge(r.priority, signalClass(r.priority))}</td>
+    </tr>`).join('');
+  return `
+    <div class="slide-header">Slide 4 — New Projects This Month</div>
+    <div class="card tbl-wrap">
+      <table><tr><th>Project</th><th>Type</th><th>Geography</th><th>Supplier(s)</th><th>ESS scope</th><th>Status</th><th style="width:8%">Priority</th></tr>
+      ${rows || '<tr><td colspan="7" style="color:var(--text3);text-align:center;padding:20px">No new projects recorded this month</td></tr>'}
+      </table>
+    </div>
+    <p class="source-note">Showing projects announced or contracted in the last 30 days.</p>`;
+}
+
+function buildS5(d) {
+  const rows = (d.projects_2026 || []).map(r => `
+    <tr>
+      <td>${esc(r.project)} ${r.is_new ? badge('NEW','badge-new') : ''}</td>
+      <td>${esc(r.type)}</td>
+      <td>${esc(r.geography)}</td>
+      <td>${esc(r.suppliers)}</td>
+      <td>${esc(r.ess_scope)}</td>
+      <td>${esc(r.delivery)}</td>
+      <td>${badge(r.priority, signalClass(r.priority))}</td>
+    </tr>`).join('');
+  return `
+    <div class="slide-header">Slide 5 — Full 2026 Project Pipeline</div>
+    <div class="card tbl-wrap">
+      <table><tr><th style="width:18%">Project</th><th>Type</th><th>Geography</th><th>Supplier(s)</th><th>ESS scope</th><th>Delivery</th><th style="width:8%">Priority</th></tr>
+      ${rows}</table>
+    </div>`;
+}
+
+function buildS6(d) {
+  const bullets = (d.technology_bullets || []).map(b =>
+    `<div class="bullet"><strong>${esc(b.title)}</strong> — ${esc(b.body)}</div>`
+  ).join('');
+  return `
+    <div class="slide-header">Slide 6 — Technology Watch</div>
+    <div class="card">${bullets}</div>`;
+}
+
+function buildS7(d) {
+  const rows = (d.competitive_snapshot || []).map(r => `
+    <tr>
+      <td>${esc(r.supplier)}</td>
+      <td>${esc(r.chemistry)}</td>
+      <td>${esc(r.position)}</td>
+      <td>${esc(r.direction)}</td>
+    </tr>`).join('');
+  return `
+    <div class="slide-header">Slide 7 — Competitive Positioning Snapshot</div>
+    <div class="card tbl-wrap">
+      <table><tr><th style="width:15%">Supplier</th><th>Chemistry focus</th><th>Strategic position</th><th>Likely direction</th></tr>
+      ${rows}</table>
+    </div>`;
+}
+
+function buildS8(d) {
+  const rows = (d.regulatory_watch || []).map(r => `
+    <tr>
+      <td>${esc(r.body)}</td>
+      <td>${esc(r.update)}</td>
+      <td>${esc(r.impact)}</td>
+      <td>${badge(r.urgency, signalClass(r.urgency))}</td>
+    </tr>`).join('');
+  return `
+    <div class="slide-header">Slide 8 — Regulatory Watch</div>
+    <div class="card tbl-wrap">
+      <table><tr><th style="width:18%">Body / Regulation</th><th>Update</th><th>Impact</th><th style="width:10%">Urgency</th></tr>
+      ${rows}</table>
+    </div>`;
+}
+
+function buildS9() {
+  return `
+    <div class="slide-header">Slide 9 — Visual Analytics</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="chart-title">Supplier activity index</div>
+        <div class="legend">
+          <span><span class="ld" style="background:#378ADD"></span>High signal</span>
+          <span><span class="ld" style="background:#B5D4F4"></span>Med signal</span>
+        </div>
+        <div style="height:210px"><canvas id="actChart"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="chart-title">Chemistry mix — 2026 orders</div>
+        <div id="chem-legend" class="legend"></div>
+        <div style="height:210px"><canvas id="chemChart"></canvas></div>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <div class="chart-title">MWh capacity — confirmed 2026 contracts</div>
+        <div style="height:210px"><canvas id="mwhChart"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="chart-title">Active pipeline by vessel type</div>
+        <div style="height:210px"><canvas id="vesselChart"></canvas></div>
+      </div>
+    </div>`;
+}
+
+function buildS10(d) {
+  const t = d.takeaways || {};
+  return `
+    <div class="slide-header">Slide 10 — Strategic Takeaways · ${esc(d.week_label)}</div>
+    <div class="card">
+      <div class="bullet" style="padding:10px 0">
+        <strong>What matters most now</strong><br>${esc(t.matters_now)}
+      </div>
+      <div class="bullet" style="padding:10px 0">
+        <strong>What to watch next</strong><br>${esc(t.watch_next)}
+      </div>
+      <div class="bullet" style="padding:10px 0">
+        <strong>What it means for suppliers and integrators</strong><br>${esc(t.means_for_integrators)}
+      </div>
+    </div>`;
+}
+
+// ── Chart rendering ────────────────────────────────────────────────────────
+let charts = {};
+function buildCharts(a) {
+  if (!a) return;
+  Object.values(charts).forEach(c => c.destroy());
+  charts = {};
+
+  // Supplier activity
+  if (a.supplier_activity?.length) {
+    const labels = a.supplier_activity.map(x => x.supplier);
+    charts.act = new Chart(document.getElementById('actChart'), {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [
+          { label: 'High', data: a.supplier_activity.map(x => x.high), backgroundColor: '#378ADD' },
+          { label: 'Med',  data: a.supplier_activity.map(x => x.medium), backgroundColor: '#B5D4F4' }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { stacked: true, ticks: { font: { size: 10 }, maxRotation: 30 } },
+          y: { stacked: true, ticks: { font: { size: 10 }, stepSize: 1 } }
+        }
+      }
+    });
+  }
+
+  // Chemistry doughnut
+  if (a.chemistry_mix?.length) {
+    const colors = ['#1D9E75','#378ADD','#7F77DD','#BA7517','#888780','#D85A30'];
+    const legend = document.getElementById('chem-legend');
+    if (legend) {
+      legend.innerHTML = a.chemistry_mix.map((x, i) =>
+        `<span><span class="ld" style="background:${colors[i % colors.length]}"></span>${x.chemistry} ${x.percent}%</span>`
+      ).join('');
+    }
+    charts.chem = new Chart(document.getElementById('chemChart'), {
+      type: 'doughnut',
+      data: {
+        labels: a.chemistry_mix.map(x => x.chemistry),
+        datasets: [{ data: a.chemistry_mix.map(x => x.percent), backgroundColor: colors, borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+    });
+  }
+
+  // MWh contracts
+  if (a.mwh_contracts?.length) {
+    const defaultColors = ['#378ADD','#5DCAA5','#7F77DD','#85B7EB','#BA7517','#1D9E75'];
+    charts.mwh = new Chart(document.getElementById('mwhChart'), {
+      type: 'bar',
+      data: {
+        labels: a.mwh_contracts.map(x => x.label),
+        datasets: [{
+          label: 'MWh',
+          data: a.mwh_contracts.map(x => x.mwh),
+          backgroundColor: a.mwh_contracts.map((x, i) => x.color || defaultColors[i % defaultColors.length])
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { font: { size: 9 }, maxRotation: 35 } },
+          y: { title: { display: true, text: 'MWh', font: { size: 10 } }, ticks: { font: { size: 10 } } }
+        }
+      }
+    });
+  }
+
+  // Vessel pipeline
+  if (a.vessel_pipeline?.length) {
+    charts.vessel = new Chart(document.getElementById('vesselChart'), {
+      type: 'bar',
+      data: {
+        labels: a.vessel_pipeline.map(x => x.type),
+        datasets: [{ label: 'Projects', data: a.vessel_pipeline.map(x => x.count), backgroundColor: '#5DCAA5' }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { font: { size: 10 }, stepSize: 1 } },
+          y: { ticks: { font: { size: 10 } } }
+        }
+      }
+    });
+  }
+}
+
+// ── Slide navigation ───────────────────────────────────────────────────────
+let currentSlide = 0;
+let briefingData = null;
+
+function go(i) {
+  currentSlide = i;
+  document.querySelectorAll('.slide').forEach((s, j) => s.classList.toggle('active', j === i));
+  document.querySelectorAll('.snav').forEach((n, j) => n.classList.toggle('active', j === i));
+  if (i === 8 && briefingData) setTimeout(() => buildCharts(briefingData.analytics), 60);
+}
+
+// ── Render all slides ──────────────────────────────────────────────────────
+function render(d) {
+  briefingData = d;
+
+  const slideBuilders = [
+    () => buildS1(d),
+    () => buildS2(d),
+    () => buildS3(d),
+    () => buildS4(d),
+    () => buildS5(d),
+    () => buildS6(d),
+    () => buildS7(d),
+    () => buildS8(d),
+    () => buildS9(),
+    () => buildS10(d),
+  ];
+
+  const container = document.getElementById('slides');
+  container.innerHTML = slideBuilders.map((fn, i) =>
+    `<div id="s${i}" class="slide${i === 0 ? ' active' : ''}">${fn()}</div>`
+  ).join('');
+
+  // Update meta
+  const dt = d.generated_at ? new Date(d.generated_at).toLocaleString('en-GB', {
+    day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
+  }) : 'unknown';
+  document.getElementById('meta-text').textContent =
+    `Maritime & Industrial ESS Intelligence · ${d.week_label || ''} · Updated ${dt} UTC`;
+}
+
+// ── Load briefing.json ─────────────────────────────────────────────────────
+async function loadBriefing() {
+  const container = document.getElementById('slides');
+  try {
+    const res = await fetch('./data/briefing.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    container.innerHTML = `
+      <div class="error">
+        <strong>Could not load briefing data.</strong><br><br>
+        ${err.message}<br><br>
+        <small>Make sure <code>data/briefing.json</code> exists. Run <code>python fetch_briefing.py</code> locally to generate it,
+        or wait for the GitHub Actions workflow to run on Friday.</small>
+      </div>`;
+  }
+}
+
+loadBriefing();
+</script>
+</body>
+</html>

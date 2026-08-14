@@ -1,0 +1,40 @@
+name: ESS Market Radar — Weekly Briefing
+
+on:
+  schedule:
+    # Every Friday at 07:00 UTC
+    - cron: "0 7 * * 5"
+  workflow_dispatch:
+    # Also allows manual run from GitHub Actions tab
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit the JSON and push
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Fetch weekly briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python fetch_briefing.py
+
+      - name: Commit and push updated briefing
+        run: |
+          git config user.name  "ESS Market Radar Bot"
+          git config user.email "bot@ess-market-radar"
+          git add data/
+          # Only commit if something changed
+          git diff --cached --quiet || git commit -m "Weekly briefing — $(date +'%Y-%m-%d')"
+          git push

@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-08-14T07:00:00Z",
+  "week_label": "Week of 14 August 2026",
+  "metrics": {
+    "new_projects_30d": 3,
+    "supplier_moves": 6,
+    "high_signal_moves": 3,
+    "regulatory_updates": 4,
+    "dominant_chemistry": "LFP"
+  },
+  "executive_bullets": [
+    {
+      "title": "Corvus wins BC Ferries Summit Class \u2014 40 MWh across 4 vessels",
+      "date": "11 Aug 2026",
+      "is_new": true,
+      "body": "Corvus Energy awarded contract for four hybrid-electric double-ended ferries for BC Ferries. 10 MWh Dolphin NxtGen Power per vessel; architecture pre-wired for 70 MWh total. Built at China Merchants Weihai; ABB as integrator. First delivery 2029."
+    },
+    {
+      "title": "Meyer Werft Project Vision \u2014 world first 82,000 GT battery-electric cruise concept",
+      "date": "13 Apr 2026",
+      "is_new": false,
+      "body": "Unveiled at Seatrade Cruise Global. 275m, 1856 pax, Corvus named as battery supplier. Up to 95% GHG reduction claimed. No contract yet \u2014 but signals cruise segment seriously considering battery-electric at scale for the first time."
+    }
+  ],
+  "supplier_moves": [
+    {
+      "supplier": "Corvus Energy",
+      "update": "BC Ferries Summit Class \u00d74 (40 MWh)",
+      "strategic_meaning": "North American ferry dominance confirmed; future-ready 70 MWh architecture is a new commercial differentiator",
+      "signal": "High"
+    },
+    {
+      "supplier": "Echandia",
+      "update": "Gotland Horizon X 780 kWh hybrid catamaran",
+      "strategic_meaning": "Winning Nordic ferry routes previously held by Corvus; 20-yr battery life a key differentiator",
+      "signal": "High"
+    }
+  ],
+  "market_signals": [
+    {
+      "label": "Signal 1 \u2014 Ferry market has tipped to mainstream",
+      "observation": "Corvus won BC Ferries, CMAL, Washington State and Matson within 12 months. Multi-vessel programmes are now the norm.",
+      "interpretation": "Ferry electrification is no longer early-adopter. Shipyards are standardising on battery-electric for new fleet programmes. Structural shift.",
+      "confidence": "High"
+    },
+    {
+      "label": "Signal 2 \u2014 Cruise segment entering the picture",
+      "observation": "Meyer Werft Project Vision is the first credible large-scale fully electric cruise ship concept from a tier-1 builder.",
+      "interpretation": "Battery-electric is moving up the vessel size ladder faster than expected. If one cruise operator orders, it resets demand expectations entirely.",
+      "confidence": "Medium"
+    }
+  ],
+  "projects_30d": [
+    {
+      "project": "BC Ferries Summit Class \u00d74",
+      "type": "Hybrid-electric ferry",
+      "geography": "Canada",
+      "suppliers": "Corvus / ABB",
+      "ess_scope": "40 MWh Dolphin NxtGen Power (70 MWh future-ready)",
+      "status": "Contracted 11 Aug 2026; first delivery 2029",
+      "priority": "High",
+      "source_date": "11 Aug 2026"
+    }
+  ],
+  "projects_2026": [
+    {
+      "project": "BC Ferries Summit Class \u00d74",
+      "type": "Hybrid ferry",
+      "geography": "Canada",
+      "suppliers": "Corvus / ABB",
+      "ess_scope": "40 MWh (70 MWh future-ready)",
+      "delivery": "2029\u20132031",
+      "priority": "High",
+      "is_new": true
+    },
+    {
+      "project": "CMAL ferries \u00d77",
+      "type": "All-electric ferry",
+      "geography": "Scotland",
+      "suppliers": "Corvus / ABB",
+      "ess_scope": "40 MWh total",
+      "delivery": "2026\u20132028",
+      "priority": "High",
+      "is_new": false
+    }
+  ],
+  "technology_bullets": [
+    {
+      "title": "Dolphin NxtGen Power confirmed on large ferry programme",
+      "body": "BC Ferries Summit Class specifies Dolphin NxtGen Power with future-ready 70 MWh architecture. Capacity upgrade without structural vessel modification is becoming a design expectation."
+    },
+    {
+      "title": "Battery room replaces engine room \u2014 Meyer Werft Vision",
+      "body": "Project Vision eliminates the engine room entirely. No exhaust shaft or funnel needed. Fundamental vessel design shift, not just a propulsion swap."
+    }
+  ],
+  "competitive_snapshot": [
+    {
+      "supplier": "Corvus Energy",
+      "chemistry": "LFP (Dolphin/Blue Whale NxtGen), ultra-LFP R&D",
+      "position": "Dominant market leader. Largest pipeline in sector history.",
+      "direction": "Blue Whale NxtGen Q4 2026. Cruise segment via Meyer Werft."
+    },
+    {
+      "supplier": "Echandia",
+      "chemistry": "LTO + LFP",
+      "position": "Fastest-growing challenger. Winning Nordic routes previously held by Corvus.",
+      "direction": "Austal partnership opens Pacific market. Large-scale LFP product watch."
+    }
+  ],
+  "regulatory_watch": [
+    {
+      "body": "IMO MSC 111",
+      "update": "Battery ESS safety work plan endorsed. Interim guidelines development underway. SDC 13 milestone May 2027.",
+      "impact": "Suppliers must align documentation with anticipated guidelines. Class approvals from 2027 will reference these.",
+      "urgency": "Actionable"
+    },
+    {
+      "body": "EU ETS 2026\u20132027",
+      "update": "70% CO2 allowance surrender in force 2026. 100% from 2027.",
+      "impact": "100% surrender from 2027 is the largest single commercial driver for hybrid retrofit enquiries.",
+      "urgency": "Actionable"
+    }
+  ],
+  "analytics": {
+    "supplier_activity": [
+      {
+        "supplier": "Corvus",
+        "high": 5,
+        "medium": 1
+      },
+      {
+        "supplier": "Echandia",
+        "high": 4,
+        "medium": 0
+      },
+      {
+        "supplier": "ABB",
+        "high": 2,
+        "medium": 1
+      },
+      {
+        "supplier": "AYK Energy",
+        "high": 1,
+        "medium": 1
+      },
+      {
+        "supplier": "CATL",
+        "high": 0,
+        "medium": 2
+      }
+    ],
+    "chemistry_mix": [
+      {
+        "chemistry": "LFP",
+        "percent": 65
+      },
+      {
+        "chemistry": "LTO",
+        "percent": 17
+      },
+      {
+        "chemistry": "NMC",
+        "percent": 12
+      },
+      {
+        "chemistry": "Other",
+        "percent": 6
+      }
+    ],
+    "vessel_pipeline": [
+      {
+        "type": "Ferries",
+        "count": 9
+      },
+      {
+        "type": "Tugs",
+        "count": 8
+      },
+      {
+        "type": "Cargo",
+        "count": 3
+      },
+      {
+        "type": "Icebreakers",
+        "count": 3
+      },
+      {
+        "type": "Containerships",
+        "count": 3
+      },
+      {
+        "type": "OSV",
+        "count": 2
+      },
+      {
+        "type": "Tankers",
+        "count": 2
+      },
+      {
+        "type": "Cruise",
+        "count": 1
+      }
+    ],
+    "mwh_contracts": [
+      {
+        "label": "BC Ferries \u00d74",
+        "mwh": 40,
+        "color": "#378ADD"
+      },
+      {
+        "label": "CMAL \u00d77",
+        "mwh": 40,
+        "color": "#378ADD"
+      },
+      {
+        "label": "Polarstern (AYK)",
+        "mwh": 16,
+        "color": "#7F77DD"
+      },
+      {
+        "label": "Svitzer Balder",
+        "mwh": 6,
+        "color": "#1D9E75"
+      },
+      {
+        "label": "Bibby eCSOV",
+        "mwh": 25,
+        "color": "#85B7EB"
+      },
+      {
+        "label": "CG Icebreaker",
+        "mwh": 3.7,
+        "color": "#5DCAA5"
+      }
+    ]
+  },
+  "takeaways": {
+    "matters_now": "The BC Ferries Summit Class future-ready 70 MWh architecture is the commercial signal of the week. Corvus is selling upgrade optionality baked into the vessel \u2014 operators can justify conservative initial capacity knowing full electric is pre-engineered. Expect this pattern to become standard on new hybrid ferry programmes within 18 months.",
+    "watch_next": "Whether Meyer Werft Project Vision attracts a cruise operator order before year-end is the single most consequential commercial question in the sector. Also watch IMO SDC 13 (May 2027) \u2014 treat the next 9 months as preparation time for interim guideline compliance documentation.",
+    "means_for_integrators": "EU ETS hitting 100% surrender in 2027 means commercial pressure is intensifying materially. The retrofit RFQ pipeline should be building now for H1 2027 delivery. Integrators with class-ready ESS documentation, LFP product lines, and crew training capability will be best positioned."
+  }
+}
