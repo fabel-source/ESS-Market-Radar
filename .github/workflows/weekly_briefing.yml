@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name  "ESS Market Radar Bot"
           git config user.email "bot@ess-market-radar"
-          git add data/
+          git add docs/data/
           git diff --cached --quiet || git commit -m "Weekly briefing — $(date +'%Y-%m-%d')"
           git push
