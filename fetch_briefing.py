@@ -47,7 +47,9 @@ The JSON structure must be exactly:
       "title": "string",
       "date": "DD Mon YYYY or Q1/Q2 2026 etc",
       "is_new": true or false,
-      "body": "string (2-4 sentences, analyst tone, explain why it matters)"
+      "body": "string (2-4 sentences, analyst tone, explain why it matters)",
+      "source_url": "https://... or null if not available",
+      "source_name": "e.g. Maritimt Magasin, TradeWinds, DNV.com"
     }
   ],
   "supplier_moves": [
