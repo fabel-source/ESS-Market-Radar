@@ -189,7 +189,8 @@ function buildS1(d) {
       ${b.is_new ? badge('NEW','badge-new') : ''}
       <span class="dt">${esc(b.date)}</span><br>
       ${esc(b.body)}
-    </div>`).join('');
+      ${b.source_url ? `<a href="${esc(b.source_url)}" target="_blank" rel="noopener" style="font-size:11px;color:var(--blue);text-decoration:none;margin-top:4px;display:inline-block">↗ ${esc(b.source_name || 'Source')}</a>` : ''}
+      </div>`).join('');
 
   return `
     <div class="slide-header">Slide 1 — Executive Summary · ${esc(d.week_label)}</div>
